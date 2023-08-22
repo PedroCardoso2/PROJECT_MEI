@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body{
+    background-color: #ccc;
+}
+/* Estruturas das DIVS*/
 .conteiner{    
     border: 1px solid black;
     width: 100%;
@@ -24,12 +28,13 @@
 .box-conteiner h3{
     transition:  0.5s;
 }
-
+/*Animações*/
 .box-conteiner h3:hover{
     color: #ccc;
 }
 
 img{
+    margin-bottom: 15px;
     padding-bottom: 2px;
     width: 100px;
     border: 1px solid black;
@@ -37,5 +42,42 @@ img{
 }
 
 #formularios{
-    margin-top: 7pc;
+    border: 10px;
+    margin-top: 10pc;
+    justify-items: center;
+    
+}
+
+#buttons{
+    border-radius: 8px;
+    box-shadow: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nova{
+    font-size: 15px;
+    margin: 15px 0px 0px 80px;
+    display: block;
+    transition: 0.3s;
+}
+
+.nova:hover{
+    background-color: rgb(113, 124, 135);
+}
+
+
+/*formularios em si */
+
+.f-processo{
+    margin: 20px 10pc 10px 5px;
+}
+
+#fro{
+    padding: 10px 10px;
+    display: contents;
+}
+
+/*primeira parte*/
+.nuji{
+    margin: 5px 5pc ;
 }
