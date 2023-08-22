@@ -1,80 +1,41 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
-.container {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 320px;
-    max-width: 90%;
+.conteiner{    
+    border: 1px solid black;
+    width: 100%;
+    height: 70px;
+    display: inline-flex;
+    padding: 12px 20px 12px 25px;
+    border-left: 20px;
+    background-color: black;
+}
+
+.box-conteiner{
+    color: antiquewhite;
     text-align: center;
+    font-size: 19px;
+    padding-top: 20px;
+    padding-left: 30pc;
 }
 
-h1 {
-    color: #111213;
-    font-size: 24px;
-    margin-bottom: 20px;
+.box-conteiner h3{
+    transition:  0.5s;
 }
 
-form {
-    display: grid;
-    gap: 10px;
-    text-align: left;
+.box-conteiner h3:hover{
+    color: #ccc;
 }
 
-label {
-    display: block;
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
+img{
+    padding-bottom: 2px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
-input[type="text"],
-input[type="date"],
-select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-input[type="texte"] {
-    text-align: right;
-}
-
-select {
-    appearance: none;
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background: url('arrow-down.png') no-repeat right center;
-    background-size: 20px;
-}
-
-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: #0056b3;
+#formularios{
+    margin-top: 7pc;
 }
