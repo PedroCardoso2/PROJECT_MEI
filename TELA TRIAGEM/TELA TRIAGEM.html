@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JURIDICO BCC</title>
+    <LInK rel="stylesheet" href="TELA TRIAGEM.css">
+</head>
+<body>
+    <div>
+        <h1>Triagem</h1>
+        <form action="">
+            <button class="NOVA" type="submit">NOVA TRIAGEM</button><br>
+            <div>
+                <label for="">Nº DO PROCESSO:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">DATA CHEGADA</label>
+                <input type="date">
+            </div>
+            <div>
+                <label for="">DATA DO TRATAMENTO DA TRIAGEM</label>
+                <input type="date">
+            </div>
+            <div>
+                <label for="">RECEBIDA POR:</label>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="E-mail">E-MAIl</option>
+                    <option value="E-saj">E-SAJ</option>
+                    <option value="pje">Pje</option>
+                </select>
+            </div>
+            <div>
+                <label for="">TIPO DE JUSTIÇA:</label>
+                <select for="">
+                    <option value=""></option>
+                    <option value="Jec">Jec</option>
+                    <option value="">Civel Comum</option>
+                    <option value="Trabalhista">Trabalhista</option>
+                    <option value="Federal">Federal</option>
+                    <option value="Criminal">Criminal</option>
+                </select>
+            </div>
+            <div>
+                <label for="">AUTOR</label>
+                <input type="name:">
+            </div>
+            <div>
+                <label for="">SITUAÇÃO LIMINAR:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">OBRIGAÇÃO DE FAZER</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">VALOR DA MULTA</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">VALOR LIMITE</label>
+                <input type = "texte" maxlength="9" id="VALOR" onkeyup="formatarMoeda()">
+            
+            </div>
+            <div>
+                <label for="">TIPO DE MULTA:</label>
+                <select for="">
+                    <option value=""></option>
+                    <option value="DIARIA">Diaria</option>
+                    <option value="">Única</option>
+                    <option value="Horas">Horas</option>
+                </select>
+            </div>
+            <div>
+                <label for="">DETERMINAÇÃO JUDICIAL</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">PRAZO FATAL</label>
+                <input type="date">
+            </div>
+        
+            <button class="SALVAR" type="submit">SALVAR</button>
+            <button class="EDITAR" type="submit"> EDITAR</button>
+            <button class="IMPORTAR" type="submit">IMPORTAR</button>
+            <button class="EXPORTAR" type="submit">EXPORTAR</button>
+        </form>
+    </div>
+</body>
+</html>
