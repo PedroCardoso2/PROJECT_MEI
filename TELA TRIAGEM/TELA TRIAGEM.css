@@ -1,6 +1,8 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    
+    text-align: center;
 }
 
 body{
@@ -22,7 +24,7 @@ body{
     text-align: center;
     font-size: 19px;
     padding-top: 20px;
-    padding-left: 30pc;
+    padding-left: 29pc;
 }
 
 .box-conteiner h3{
@@ -33,6 +35,7 @@ body{
     color: #ccc;
 }
 
+
 img{
     margin-bottom: 15px;
     padding-bottom: 2px;
@@ -41,43 +44,84 @@ img{
     border-radius: 20px;
 }
 
-#formularios{
-    border: 10px;
-    margin-top: 10pc;
-    justify-items: center;
-    
-}
 
-#buttons{
-    border-radius: 8px;
-    box-shadow: none;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-.nova{
-    font-size: 15px;
-    margin: 15px 0px 0px 80px;
-    display: block;
-    transition: 0.3s;
-}
 
-.nova:hover{
-    background-color: rgb(113, 124, 135);
-}
+
+
+
 
 
 /*formularios em si */
 
-.f-processo{
-    margin: 20px 10pc 10px 5px;
-}
-
-#fro{
-    padding: 10px 10px;
-    display: contents;
-}
 
 /*primeira parte*/
-.nuji{
-    margin: 5px 5pc ;
+
+
+
+.f-processo{    
+    padding-bottom: 30px;
+    margin: 10px 0px 0px 9px;
+    display: block;
+    border: 20px 20px;
 }
+
+.f-date{
+    margin-left: 9px;
+}
+
+.f-recebido{
+    margin: 9px 9px;
+    position: relative;
+}
+
+.f-autor{
+    margin-left: 9px;
+    margin-top: 40px;
+}
+
+.f-situacao{
+    margin-left: 9px;
+}
+
+.f-obrigacao{
+    margin-left: 9px;
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+.valor-f{
+    margin-left: 15px;
+}
+
+.f-valor{
+    margin-left: 9px;
+    margin-top: 20px;   
+    display: inline-flex;
+}
+
+.f-multa{
+    margin-left: 9px;
+    
+}
+
+.f-prazo{
+    margin: 9px 9px;
+}
+
+.buttons{
+    margin: 10px 10px;
+    border-radius: 50px;
+}
+
+.box-form {
+    border: 2px solid black;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    width: 70%;
+    margin-left: 190px;
+    margin-top: 45px;
+    background-color: antiquewhite;
+    border-radius: 14px;
+}
+
+

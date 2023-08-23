@@ -15,89 +15,92 @@
         <div class="box-conteiner">
             <h3>TRIAGEM</h3>
         </div>
-        <div id="formularios">
-            <div id="fro" class="f-processo">
-                <label for="">Nº DO PROCESSO:</label>
-                <input type="text">
-            </div>
-            <div id="fro" class="f-data">
-                <label for="">DATA CHEGADA</label>
-                <input type="date">
-            </div>
-            <div id="fro" class="f-tratamento">
-                <label for="">DATA DO TRATAMENTO DA TRIAGEM</label>
-                <input type="date">
-            </div>
-            <div id="fro" class="f-recebido">
-                <label for="">RECEBIDA POR:</label>
-                <select name="" id="">
-                    <option value=""></option>
-                    <option value="E-mail">E-MAIl</option>
-                    <option value="E-saj">E-SAJ</option>
-                    <option value="pje">Pje</option>
-                </select>
-            </div>
-            <div id="fro" class="f-justica">
-                <label for="">TIPO DE JUSTIÇA:</label>
-                <select for="">
-                    <option value=""></option>
-                    <option value="Jec">Jec</option>
-                    <option value="">Civel Comum</option>
-                    <option value="Trabalhista">Trabalhista</option>
-                    <option value="Federal">Federal</option>
-                    <option value="Criminal">Criminal</option>
-                </select>
-            </div>
-            <div class="aupra">
-                <div f-autor>
-                    <label for="">AUTOR</label>
-                    <input type="name:">
-                </div>
-                <div id="fro" class="f-situacao">
-                    <label for="">SITUAÇÃO LIMINAR:</label>
-                    <input type="text">
-                </div>
-                <div id="fro" class="f-obrigacao">
-                    <label for="">OBRIGAÇÃO DE FAZER</label>
-                    <input type="text">
-                </div>
-                <div id="fro" class="f-valormult">
-                    <label for="">VALOR DA MULTA</label>
-                    <input type="text">
-                </div>
-                <div id="fro" class="f-valorlimite">
-                    <label for="">VALOR LIMITE</label>
-                    <input type="texte" maxlength="9" id="VALOR" onkeyup="formatarMoeda()">
+    </div>
+    <div class="box-form">
+    <div class="nova">
+        <button type="submit">NOVA TRIAGEM</button><br>
+    </div>
+    <div class="f-processo">
+        <label for="">Nº DO PROCESSO:</label>
+        <input type="text">
+    </div>
 
-                </div>
-                <div id="fro" class="f-tipomult">
-                    <label for="">TIPO DE MULTA:</label>
-                    <select for="">
-                        <option value=""></option>
-                        <option value="DIARIA">Diaria</option>
-                        <option value="">Única</option>
-                        <option value="Horas">Horas</option>
-                    </select>
-                </div>
-                <div id="fro" class="f-determina">
-                    <label for="">DETERMINAÇÃO JUDICIAL</label>
-                    <input type="text">
-                </div>
-                <div id="fro" class="f-prazo">
-                    <label for="">PRAZO FATAL</label>
-                    <input type="date">
-                </div>
-            </div>
-            <div id="fro" class="f-buttons">
-                <button id="buttons" class="salvar" type="submit">SALVAR</button>
-                <button id="buttons" class="editar" type="submit"> EDITAR</button>
-                <button id="buttons" class="importar" type="submit">IMPORTAR</button>
-                <button id="buttons" class="exportar" type="submit">EXPORTAR</button>
+    <div class="f-date">
+        <label for="">DATA CHEGADA</label>
+        <input type="date">
 
-                <button id="buttons" class="nova" type="submit">NOVA TRIAGEM</button><br>
-            </div>
+        <label for="">DATA DO TRATAMENTO DA TRIAGEM</label>
+        <input type="date">
+    </div>
+
+    <div class="f-recebido">
+        <label for="">RECEBIDA POR:</label>
+        <select name="" id="">
+            <option value=""></option>
+            <option value="E-mail">E-MAIl</option>
+            <option value="E-saj">E-SAJ</option>
+            <option value="pje">Pje</option>
+        </select>
+
+        <label for="">TIPO DE JUSTIÇA:</label>
+        <select for="">
+            <option value=""></option>
+            <option value="Jec">Jec</option>
+            <option value="">Civel Comum</option>
+            <option value="Trabalhista">Trabalhista</option>
+            <option value="Federal">Federal</option>
+            <option value="Criminal">Criminal</option>
+        </select>
+    </div>
+
+    <div class="f-autor">
+        <label for="">AUTOR:</label>
+        <input type="name:">
+        <label for="">SITUAÇÃO LIMINAR:</label>
+        <input type="text">
+    </div>
+
+    <div class="f-obrigacao">
+        <label for="">OBRIGAÇÃO DE FAZER:</label>
+        <input type="text">
+        <div class="f-multa">
+            <label for="">TIPO DE MULTA:</label>
+            <select for="">
+                <option value=""></option>
+                <option value="DIARIA">Diaria</option>
+                <option value="">Única</option>
+                <option value="Horas">Horas</option>
+                <option value="ATO">Ato</option>
+            </select>
+        </div>
+        <div class="valor-f">
+            <label for="">VALOR DA MULTA:</label>
+            <input type="text">
         </div>
     </div>
+
+    <div class="f-valor">
+        <label for="">VALOR LIMITE:</label>
+        <input type="texte" maxlength="9" id="VALOR" onkeyup="formatarMoeda()">
+        <div class="f-determincao">
+            <label for="">DETERMINAÇÃO JUDICIAL</label>
+            <input type="text">
+        </div>
+    </div>
+
+
+    <div class="f-prazo">
+        <label for="">PRAZO FATAL</label>
+        <input type="date">
+    </div>
+
+    <div class="class-buttons">
+        <button id="buttons" type="submit">SALVAR</button>
+        <button id="buttons" type="submit"> EDITAR</button>
+        <button id="buttons" type="submit">IMPORTAR</button>
+        <button id="buttons" type="submit">EXPORTAR</button>
+    </div>
+</div>
 </body>
 
 </html>
