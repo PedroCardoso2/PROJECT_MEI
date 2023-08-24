@@ -1,15 +1,16 @@
-*{
+* {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    
-    text-align: center;
+    text-align: center; 
 }
 
-body{
+body {
     background-color: #ccc;
+    
 }
+
 /* Estruturas das DIVS*/
-.conteiner{    
+.conteiner {
     border: 1px solid black;
     width: 100%;
     height: 70px;
@@ -19,7 +20,7 @@ body{
     background-color: black;
 }
 
-.box-conteiner{
+.box-conteiner {
     color: antiquewhite;
     text-align: center;
     font-size: 19px;
@@ -27,16 +28,17 @@ body{
     padding-left: 29pc;
 }
 
-.box-conteiner h3{
-    transition:  0.5s;
+.box-conteiner h3 {
+    transition: 0.5s;
 }
+
 /*Animações*/
-.box-conteiner h3:hover{
+.box-conteiner h3:hover {
     color: #ccc;
 }
 
 
-img{
+img {
     margin-bottom: 15px;
     padding-bottom: 2px;
     width: 100px;
@@ -58,70 +60,138 @@ img{
 /*primeira parte*/
 
 
-
-.f-processo{    
+.f-processo {
     padding-bottom: 30px;
     margin: 10px 0px 0px 9px;
     display: block;
     border: 20px 20px;
 }
 
-.f-date{
-    margin-left: 9px;
+.f-date {
+    display: inline-flex;
 }
 
-.f-recebido{
+.d-chegada {
+    margin-right: 90px;
+}
+
+.f-recebido {
     margin: 9px 9px;
     position: relative;
 }
 
-.f-autor{
-    margin-left: 9px;
+
+
+.text-autor {
+    margin-right: 275px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.recebido{
     margin-top: 40px;
+    
+    display: flex;
+    margin-left: 228px;
 }
 
-.f-situacao{
+.f-situacao {
     margin-left: 9px;
 }
 
-.f-obrigacao{
+.f-obrigacao {
     margin-left: 9px;
     margin-top: 20px;
     display: inline-flex;
 }
 
-.valor-f{
+.valor-f {
     margin-left: 15px;
 }
 
-.f-valor{
+.data-chegada{
+    display: flex;
+    margin-left: 230px;
+}
+
+.data-treinamento{
+    display: flex;
+    margin-left: 400px;
+}
+
+
+
+
+
+.f-multa {
     margin-left: 9px;
-    margin-top: 20px;   
-    display: inline-flex;
+
 }
 
-.f-multa{
-    margin-left: 9px;
-    
+.f-prazo {
+    margin: 25px 9px;
 }
 
-.f-prazo{
-    margin: 9px 9px;
+#buttons {
+    border-radius: 5px;
 }
 
-.buttons{
-    margin: 10px 10px;
-    border-radius: 50px;
+#buttonTRI {
+    border-radius: 5px;
+    font-size: 15px;
+    margin-right: 70pc;
 }
+
+.class-buttons {
+    margin-top: 40px;
+    margin-left: 60pc;
+    font-size: 25px;
+}
+
+.d-teinamento {
+    margin-left: 0px;
+}
+
+#VALOR{
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.determinacao-jud{
+    display: flex;
+    margin-left: 39pc;
+    margin-bottom: 80px;
+    padding: 0;
+    border: 0;
+}
+
+.valor-final{
+    margin-top: 30px;
+    display: flex;
+    margin-left: 230px;
+    margin-right: 800px;
+    padding: 0;
+    border: 0;
+}
+
+.valor-determinacao{
+    display: flex;
+}
+
+
+
 
 .box-form {
+
     border: 2px solid black;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     width: 70%;
-    margin-left: 190px;
-    margin-top: 45px;
+    height: 25pc;
+    margin: 45px 190px;
     background-color: antiquewhite;
     border-radius: 14px;
+    padding: 2px;
+    
 }
 
-
+    
