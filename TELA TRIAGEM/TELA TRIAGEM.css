@@ -50,7 +50,7 @@ img {
 /*butãos*/
 
 #f-buttons{
-    margin-top: 10pc;
+    margin-top: 6pc;
     margin-left: 60pc;
 }
 
@@ -149,8 +149,7 @@ img {
 #box-form{
     margin-top: 40px;
     border: 1px solid black;
-    width: 95%;
-    margin-left: 30px;
-    
-
+    width: 100%;
+    padding: 20px 20px;
+    background-color: bisque;
 }
