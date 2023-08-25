@@ -47,151 +47,110 @@ img {
 }
 
 
+/*butãos*/
 
-
-
-
-
-
-
-/*formularios em si */
-
-
-/*primeira parte*/
-
-
-.f-processo {
-    padding-bottom: 30px;
-    margin: 10px 0px 0px 9px;
-    display: block;
-    border: 20px 20px;
+#f-buttons{
+    margin-top: 10pc;
+    margin-left: 60pc;
 }
 
-.f-date {
-    display: inline-flex;
+#button-novatriagem{
+    margin-right: 75pc;
 }
 
-.d-chegada {
-    margin-right: 90px;
+.button-nova{
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.2s;
 }
 
-.f-recebido {
-    margin: 9px 9px;
-    position: relative;
+.buttons{
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.2s;
 }
 
-
-
-.text-autor {
-    margin-right: 275px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+.button-nova:hover{
+    background-color: #534932;
 }
 
-.recebido{
-    margin-top: 40px;
-    
-    display: flex;
-    margin-left: 228px;
+.buttons:hover{
+    background-color: #534932;
 }
 
-.f-situacao {
-    margin-left: 9px;
-}
+/*FORMULÁRIO*/
 
-.f-obrigacao {
-    margin-left: 9px;
+#data-principal{
+    margin-left: 20pc;
     margin-top: 20px;
-    display: inline-flex;
-}
-
-.valor-f {
-    margin-left: 15px;
-}
-
-.data-chegada{
     display: flex;
-    margin-left: 230px;
 }
 
 .data-treinamento{
+    margin-left: 125px;    
+}
+
+/*EXEMPLO ONE*/
+#opcoes{
+    margin-left: 20pc;
+    margin-top: 20px;
     display: flex;
-    margin-left: 400px;
+}
+
+.justica{
+    margin-left: 190px;
 }
 
 
 
-
-
-.f-multa {
-    margin-left: 9px;
-
+#autor-liminar{
+    margin-left: 20pc;
+    margin-top: 20px;
+    display: flex;
 }
 
-.f-prazo {
-    margin: 25px 9px;
+.situacao{
+    margin-left: 150px;
 }
 
-#buttons {
-    border-radius: 5px;
+#obrigacao-valor{
+    margin-left: 20pc;
+    margin-top: 20px;
+    display: flex;
 }
 
-#buttonTRI {
-    border-radius: 5px;
-    font-size: 15px;
-    margin-right: 70pc;
+.valor-multa{
+    margin-left: 42px;
 }
 
-.class-buttons {
+#valor-tipo{
+    margin-left: 20pc;
+    margin-top: 20px;
+    display: flex;
+}
+
+.tipo-multa{
+    margin-left: 105px;
+}
+
+#determinacao-prazo{
+    margin-left: 20pc;
+    margin-top: 20px;
+    display: flex;
+}
+
+.prazo-final{
+    margin-left: 20px;
+}
+
+
+#box-form{
     margin-top: 40px;
-    margin-left: 60pc;
-    font-size: 25px;
-}
-
-.d-teinamento {
-    margin-left: 0px;
-}
-
-#VALOR{
-    margin-right: 20px;
-    margin-bottom: 50px;
-}
-
-.determinacao-jud{
-    display: flex;
-    margin-left: 39pc;
-    margin-bottom: 80px;
-    padding: 0;
-    border: 0;
-}
-
-.valor-final{
-    margin-top: 30px;
-    display: flex;
-    margin-left: 230px;
-    margin-right: 800px;
-    padding: 0;
-    border: 0;
-}
-
-.valor-determinacao{
-    display: flex;
-}
-
-
-
-
-.box-form {
-
-    border: 2px solid black;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-    width: 70%;
-    height: 25pc;
-    margin: 45px 190px;
-    background-color: antiquewhite;
-    border-radius: 14px;
-    padding: 2px;
+    border: 1px solid black;
+    width: 95%;
+    margin-left: 30px;
     
-}
 
-    
+}

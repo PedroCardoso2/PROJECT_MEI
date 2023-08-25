@@ -14,6 +14,7 @@
     </div>
     <div>
         <form>
+            
             <h1>Triagem</h1>
             <button class="NOVA" type="submit">NOVA TRIAGEM</button><br>
             <div>
@@ -48,6 +49,8 @@
                     <option value="Criminal">Criminal</option>
                 </select>
             </div>
+
+            
             <div>
                 <label for="">AUTOR</label>
                 <input type="name:">
