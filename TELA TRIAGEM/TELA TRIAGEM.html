@@ -32,115 +32,77 @@
             <input type="text" id="ndoprocesso" name="ndoprocesso">
         </div>
         <div class="campo">
-            <label for="datadapublicacao">DATA DA PUBLICACAO</label>
+            <label for="datadapublicacao">DATA CHEGADA</label>
             <input type="datetime-local" id="datadapublicacao" name="datadapublicacao">
         </div>
         <div class="campo">
-            <label for="datadobcc">DATA DO BCC</label>
-            <input type="datetime-local" id="datadobcc" name="datadobcc">
+            <label for="">RECEBIDA POR:</label>
+                <select id="caixa-recebido">
+                    <option value=""></option>
+                    <option value="E-mail">E-MAIl</option>
+                    <option value="E-saj">E-SAJ</option>
+                    <option value="pje">Pje</option>
+                </select>
         </div>
         <div class="campo">
-            <label for="datadoingresso">DATA DO INGRESSO</label>
-            <input type="datetime-local" id="datadoingresso" name="datadoingresso">
-        </div>
-        <div class="campo">
-            <label for="escritoriotriagem">ESCRITÓRIO/TRIAGEM</label>
-            <select for="">
+            <label for="">TIPO DE JUSTIÇA:</label>
+            <select for id="caixa-justica">
                 <option value=""></option>
-                <option value="Triagem">TRIAGEM</option>
-                <option value="">ESCRITÓRIO</option>
+                <option value="Jec">Jec</option>
+                <option value="">Civel Comum</option>
+                <option value="Trabalhista">Trabalhista</option>
+                <option value="Federal">Federal</option>
+                <option value="">Criminal</option>
+                <option value="">Execução fiscal</option>
             </select>
         </div>
         <div class="campo">
-            <label for="emailsalesforce">E-MAIL/SALESFORCE</label>
-            <select for="">
-                <option value=""></option>
-                <option value="E-MAIL">E-MAIL</option>
-                <option value="">SALESFORCE</option>
-            </select>
+            <label for="">AUTOR</label>
+            <input type="name:">
         </div>
         <div class="campo">
-            <label for="cpfcnpj">CPF/CNPJ</label>
-            <input type="text" id="cpfcnpj" name="cpfcnpj">
+            <label for="">SITUAÇÃO LIMINAR:</label>
+                <select for id="caixa-liminar" >
+                    <option value=""></option>
+                    <option value="">Deferida</option>
+                    <option value="">Indeferida</option>
+                    <option value="">Não apreciada</option>
+                    <option value="">Não há liminar</option>
+                    <option value="">Cumprimento de sentença</option>
+                </select>
         </div>
         <div class="campo">
-            <label for="autor">AUTOR</label>
-            <input type="text" id="autor" name="autor">
+            <label for="">OBRIGAÇÃO DE FAZER</label>
+            <input type="text">
         </div>
         <div class="campo">
-            <label for="pontodefornecimento">PONTO DE FORNECIMENTO</label>
-            <input type="text" id="pontodefornecimento" name="pontodefornecimento">
+            <label for="">VALOR DA MULTA</label>
+            <input type="text">
         </div>
         <div class="campo">
-            <label for="municipio">MUNICÍPIO</label>
-            <input type="text" id="municipio" name="municipio">
+            <label for="">VALOR LIMITE</label>
+            <input type="texte" maxlength="9" id="VALOR" onkeyup="formatarMoeda()">
         </div>
         <div class="campo">
-            <label for="tipodedecisao">TIPO DE DECISÃO</label>
-            <select for="">
-                <option value=""></option>
-                <option value="SENTENÇA">SENTENÇA</option>
-                <option value="">LIMINAR</option>
-                <option value="">ACORDO</option>
-                <option value="">ACORDÃO</option>
-            </select>
+            <label for="">TIPO DE MULTA:</label>
+                <select for id="caixa-multa" >
+                    <option value=""></option>
+                    <option value="DIARIA">Diaria</option>
+                    <option value="">Única</option>
+                    <option value="Horas">Horas</option>
+                    <option value="Atos">Por Atos</option>
+                </select>
         </div>
         <div class="campo">
-            <label for="procedimento">PROCEDIMENTO</label>
-            <select for="">
-                <option value=""></option>
-                <option value="JUIZADO ESPECIAL">JUIZADO ESPECIAL</option>
-                <option value="">CÍVEL</option>
-            </select>
+            <label for="">DETERMINAÇÃO JUDICIAL</label>
+                <input id="caixa-jud" type="text">
         </div>
         <div class="campo">
-            <label for="diretoriaacao">DIRETORIA/AÇAO</label>
-            <select for="">
-                <option value=""></option>
-                <option value="MERCADO">MERCADO</option>
-                <option value="">GRIDS</option>
-            </select>
+            <label for="">PRAZO FATAL</label>
+            <input id="caixa-prazo" type="datetime-local">
         </div>
-        <div class="campo">
-            <label for="objetoespecifico">OBJETO ESPECÍFICO</label>
-            <input type="text" id="objetoespecifico" name="objetoespecifico">
-        </div>
-        <div class="campo">
-            <label for="qtfdeobf">QTD DE OBF</label>
-            <input type="text" id="qtfdeobf" name="qtfdeobf">
-        </div>
-        <div class="campo">
-            <label for="valormulta">VALOR MULTA</label>
-            <input type="text" id="valormulta" name="valormulta"></input>
-        </div>
-        <div class="campo">
-            <label for="valormultalimite">VALOR MULTA LIMITE</label>
-            <input type="text" id="valormultalimite" name="valormultalimite">
-        </div>
-        <div class="campo">
-            <label for="determinacaojudicial">DETERMINAÇÃO JUDICIAL</label>
-            <input type="text" id="determinacaojudicial" name="determinacaojudicial">
-        </div>
-        <div class="campo">
-            <label for="dataprazofatal">DATA PRAZO FATAL</label>
-            <input type="datetime-local" id="dataprazofatal" name="dataprazofatal">
-        </div>
-        <div class="campo">
-            <label for="farol">FAROL</label>
-            <input type="text" id="farol" name="farol">
-        </div>
-        <div class="campo">
-            <label for="statusdocumprimento">STATUS DO CUMPRIMENTO</label>
-            <select for="">
-                <option value=""></option>
-                <option value="FEITO">FEITO</option>
-                <option value="">PENDENTE</option>
-            </select>
-        </div>
-        <div class="campo">
-            <label for="responsavel">RESPONSÁVEL</label>
-            <input type="text" id="responsavel" name="responsavel">
-        </div>
+        
+        
     </form>
     <div class="campo">
         <label for="descricaodaobrigacao">DESCRIÇÃO DA OBRIGAÇÃO</label>

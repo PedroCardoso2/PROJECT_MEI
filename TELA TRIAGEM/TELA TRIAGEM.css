@@ -45,6 +45,34 @@ select {
     padding-top: 3.8px;
 }
 
+#caixa-multa{
+    width: 90px;
+    font-size: 15px;
+}
+
+#caixa-recebido{
+    width: 90px;
+    font-size: 15px;
+}
+
+#caixa-justica{
+    width: 130px;
+    font-size: 15px;
+}
+
+#datadapublicacao{
+    width: 150px;
+}
+
+#caixa-prazo{
+    width: 150px;
+}
+
+#caixa-jud{
+    width: 70px;
+}
+
+
 /* Estruturas das DIVS*/
 .conteiner {
     border: 1px solid black;
