@@ -1,16 +1,4 @@
-const botaoMostrarDiv = document.getElementById("button-submit");
-const minhaDiv = document.getElementById("f-conteiner");
-        
-botaoMostrarDiv.addEventListener("click", function() {
-// Verifica se a div está escondida
-    if (minhaDiv.style.display === "none") {
-// Se estiver escondida, mostra-a
-        minhaDiv.style.display = "block";
-    } else {
-// Se não estiver escondida, esconde-a
-        minhaDiv.style.display = "none";
-    }
-});
+
 
 
 
