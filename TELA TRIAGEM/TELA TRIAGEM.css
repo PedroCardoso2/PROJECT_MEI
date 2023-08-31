@@ -1,161 +1,241 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    justify-items: center;
+
 }
 
 body {
     background-color: #ccc;
-    
+
 }
+
+.grid-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    margin-top: 20px;
+}
+
+.campo {
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px;
+}
+
+label {
+    font-weight: bold;
+    padding-bottom: 7px;
+    max-width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+input {
+    width: 220px;
+    padding-top: 3.8px;
+}
+
+select {
+    width: 220px;
+    padding-top: 3.8px;
+}
+
+
 
 /* Estruturas das DIVS*/
 .conteiner {
     border: 1px solid black;
-    width: 83pc;
-    height: 70px;
+    width: 100%;
+    height: 90px;
     display: inline-flex;
     padding: 12px 20px 12px 25px;
     border-left: 20px;
-    background-color: black;
+    background-color: #2b2929;
 }
 
-.box-conteiner {
-    color: antiquewhite;
-    text-align: center;
-    font-size: 19px;
-    padding-top: 20px;
-    padding-left: 31pc;
+.img-conteiner {
+    height: 27px;
+    width: 27px;
+    margin-top: 31px;
+    margin-left: 7pc;
 }
 
-.box-conteiner h3 {
-    transition: 0.5s;
+.home-conteiner {
+    font-size: 20px;
+    text-decoration: 10px;
+    color: #ffffff;
+    margin-top: 34px;
+    padding-left: 5px;
 }
 
-/*Animações*/
-.box-conteiner h3:hover {
-    color: #ccc;
+.logout-conteiner-img{
+    height: 27px;
+    width: 27px;
+    margin-top: 30px;
+    margin-left: 55pc;
 }
 
+.logout-conteiner{
+    font-size: 20px;
+    text-decoration: 10px;
+    color: #ffffff;
+    margin-top: 30px;
+    
+}
+
+@keyframes fade {
+    0% {
+      opacity: 1;
+    }
+  50% {
+  opacity: 0.5;
+}
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo {
+    animation: fade 3s ease-in-out infinite;
+  }
 
 img {
     margin-bottom: 15px;
     padding-bottom: 2px;
-    width: 100px;
-    border: 1px solid black;
-    border-radius: 20px;
+    width: 130px;
+    margin-right: 5px;
+    border: none;
 }
 
 
 /*butãos*/
 
-#f-buttons{
+#f-buttons {
     margin-top: 6pc;
     margin-left: 60pc;
 }
 
-#button-novatriagem{
-    margin-left: 3pc;
+#button-novatriagem {
+    margin-left: 2pc;
 }
 
-.button-nova{
+.button-nova {
     border-radius: 10px;
     border: 1px solid black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     transition: 0.2s;
 }
 
-.buttons{
+.buttons {
     border-radius: 10px;
     border: 1px solid black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     transition: 0.2s;
 }
 
-.button-nova:hover{
+.button-nova:hover {
     background-color: #534932;
 }
 
-.buttons:hover{
+.buttons:hover {
     background-color: #534932;
 }
 
 /*FORMULÁRIO*/
 
-#f-processo{
-    margin-left: 34pc;
-    margin-bottom: 40px;
-    margin-top: 30px;
+#caixa-multa{
+    width: 90px;
+    font-size: 15px;
 }
 
-#data-principal{
+#caixa-recebido{
+    width: 90px;
+    font-size: 15px;
+}
+
+#caixa-justica{
+    width: 130px;
+    font-size: 15px;
+}
+
+#datadapublicacao{
+    width: 150px;
+}
+
+#caixa-prazo{
+    width: 150px;
+}
+
+#caixa-jud{
+    width: 70px;
+}
+
+#data-principal {
     margin-left: 20pc;
     margin-top: 20px;
     display: flex;
 }
 
-.data-treinamento{
-    margin-left: 125px;    
+.data-treinamento {
+    margin-left: 89px;
 }
 
 /*EXEMPLO ONE*/
-#opcoes{
+#opcoes {
     margin-left: 20pc;
     margin-top: 20px;
     display: flex;
 }
 
-.justica{
-    margin-left: 230px;
+.justica {
+    margin-left: 198px;
 }
 
-
-
-#autor-liminar{
+#autor-liminar {
     margin-left: 20pc;
     margin-top: 20px;
     display: flex;
 }
 
-.situacao{
-    margin-left: 190px;
+.situacao {
+    margin-left: 154px;
 }
 
-#obrigacao-valor{
+#obrigacao-valor {
     margin-left: 20pc;
     margin-top: 20px;
     display: flex;
 }
 
-.valor-multa{
-    margin-left: 79px;
+.valor-multa {
+    margin-left: 44px;
 }
 
-#valor-tipo{
+#valor-tipo {
     margin-left: 20pc;
     margin-top: 20px;
     display: flex;
 }
 
-.tipo-multa{
-    margin-left: 140px;
+.tipo-multa {
+    margin-left: 105px;
 }
 
-#determinacao-prazo{
+#determinacao-prazo {
     margin-left: 20pc;
     margin-top: 20px;
     display: flex;
 }
 
-.prazo-final{
-    margin-left: 53px;
+.prazo-final {
+    margin-left: 20px;
 }
 
-
-#box-form{
-    margin-top: 40px;
-    border: 1px solid black;
-    width: 100%;
-    padding: 20px 20px;
-    background-color: bisque;
+#f-processo {
+    margin: 65px 0px 40px 33pc;
 }

@@ -11,130 +11,111 @@
 
 <body>
     <div class="conteiner">
-        <a href="#"><img src="./imagem/logo-adv.png.png" alt="img"></a>
+        <a href="#"><img src="./imagem/logo-adv.png.png" alt="img" class="logo"></a>
 
-        <div class="box-conteiner">
-            <h3>TRIAGEM</h3>
-        </div>
+
+        <a href="#"><img src="imagem/home.png" class="img-conteiner"></a>
+        <p class="home-conteiner">Home</p>
+
+        <a href="#"><img src="imagem/logout2.png" alt="logout" class="logout-conteiner-img"></a>
+        <p class="logout-conteiner">Logout</p>
+
     </div>
-
-
 
     <div id="button-novatriagem">
+<<<<<<< HEAD
         <button class="button-nova" id="button-triagem" type="submit">NOVA TRIAGEM</button>
+=======
+        <button class="button-nova" id="button-submit" type="submit">NOVA TRIAGEM</button>
+>>>>>>> f0048daa0239708802f77febce355d5e898341d7
     </div>
 
-    
-
-
-        <div id="f-processo">
-            <label for="">Nº DO PROCESSO:</label>
-            <input class="number-proc" type="text">
+    <form class="grid-form">
+        <div class="campo">
+            <label for="ndoprocesso">Nº DO PROCESSO</label>
+            <input type="text" id="ndoprocesso" name="ndoprocesso">
         </div>
-
-
-
-
-
-        <div id="data-principal">
-            <label for="">DATA CHEGADA:</label>
-            <input type="datetime-local">
-
-
-
-            <label class="data-treinamento" for="">DATA DO TRAT DA TRIAGEM:</label>
-            <input type="date">
+        <div class="campo">
+            <label for="datadapublicacao">DATA CHEGADA</label>
+            <input type="datetime-local" id="datadapublicacao" name="datadapublicacao">
         </div>
-
-
-
-
-
-
-
-
-
-
-        <div id="opcoes">
-            <label id="recebido" for="">RECEBIDA POR:</label>
-            <select name="" class="receber">
-                <option value=""></option>
-                <option value="E-mail">E-MAIl</option>
-                <option value="E-saj">E-SAJ</option>
-                <option value="pje">Pje</option>
-            </select>
-
-
-
-
-            <label class="justica" for="">TIPO DE JUSTIÇA:</label>
-            <select for="">
+        <div class="campo">
+            <label for="">RECEBIDA POR:</label>
+                <select id="caixa-recebido">
+                    <option value=""></option>
+                    <option value="E-mail">E-MAIl</option>
+                    <option value="E-saj">E-SAJ</option>
+                    <option value="pje">Pje</option>
+                </select>
+        </div>
+        <div class="campo">
+            <label for="">TIPO DE JUSTIÇA:</label>
+            <select for id="caixa-justica">
                 <option value=""></option>
                 <option value="Jec">Jec</option>
                 <option value="">Civel Comum</option>
                 <option value="Trabalhista">Trabalhista</option>
                 <option value="Federal">Federal</option>
-                <option value="Criminal">Criminal</option>
-            </select>
-
-        </div>
-
-        <div id="autor-liminar">
-            <label for="">AUTOR:</label>
-            <input type="name:">
-
-
-            <label class="situacao" for="">SITUAÇÃO LIMINAR:</label>
-            <input type="text">
-        </div>
-
-
-
-
-        <div id="obrigacao-valor">
-            <label for="">OBRIGAÇÃO DE FAZER:</label>
-            <input type="text">
-
-
-            <label class="valor-multa" for="">VALOR DA MULTA:</label>
-            <input type="text">
-        </div>
-
-        <div id="valor-tipo">
-            <label for="">VALOR LIMITE:</label>
-            <input type="texte" maxlength="9" id="VALOR" onkeyup="formatarMoeda()">
-
-
-            <label class="tipo-multa" for="">TIPO DE MULTA:</label>
-            <select for="">
-                <option value=""></option>
-                <option value="DIARIA">Diaria</option>
-                <option value="">Única</option>
-                <option value="Horas">Horas</option>
+                <option value="">Criminal</option>
+                <option value="">Execução fiscal</option>
             </select>
         </div>
-
-        <div id="determinacao-prazo">
-            <label for="">DETERMINAÇÃO JUDICIAL:</label>
-            <input type="text">
-
-            <label class="prazo-final" for="">PRAZO FATAL:</label>
-            <input type="date">
+        <div class="campo">
+            <label for="">AUTOR</label>
+            <input type="text" id="autor-text">
         </div>
-
-
-
-
-
-
-
-
-
-
+        <div class="campo">
+            <label for="">SITUAÇÃO LIMINAR:</label>
+                <select for id="caixa-liminar" >
+                    <option value=""></option>
+                    <option value="">Deferida</option>
+                    <option value="">Indeferida</option>
+                    <option value="">Não apreciada</option>
+                    <option value="">Não há liminar</option>
+                    <option value="">Cumprimento de sentença</option>
+                </select>
+        </div>
+        <div class="campo">
+            <label for="">OBRIGAÇÃO DE FAZER</label>
+            <input type="text" id="obrigacao-fazer">
+        </div>
+        <div class="campo">
+            <label for="">VALOR DA MULTA</label>
+            <input type="text" id="valor-mult">
+        </div>
+        <div class="campo">
+            <label for="">VALOR LIMITE</label>
+            <input type="texte" maxlength="9" id="valor-limit" >
+        </div>
+        <div class="campo">
+            <label for="">TIPO DE MULTA:</label>
+                <select for id="caixa-multa" >
+                    <option value=""></option>
+                    <option value="DIARIA">Diaria</option>
+                    <option value="">Única</option>
+                    <option value="Horas">Horas</option>
+                    <option value="Atos">Por Atos</option>
+                </select>
+        </div>
+        <div class="campo">
+            <label for="">DETERMINAÇÃO JUDICIAL</label>
+                <input id="caixa-jud" type="text">
+        </div>
+        <div class="campo">
+            <label for="">PRAZO FATAL</label>
+            <input id="caixa-prazo" type="datetime-local">
+        </div>
+        
+        
+    </form>
+    <div class="campo">
+        <label for="descricaodaobrigacao">DESCRIÇÃO DA OBRIGAÇÃO</label>
+        <textarea name="" id="" cols="110" rows="10"></textarea>
+    </div>
 
 
     <div id="f-buttons">
-        <button class="buttons" type="submit">SALVAR</button>
+        <button class="buttons" id="save" type="submit">SALVAR</button>
         <button class="buttons" type="submit"> EDITAR</button>
         <button class="buttons" type="submit">IMPORTAR</button>
         <button class="buttons" type="submit">EXPORTAR</button>
@@ -142,6 +123,10 @@
         <button class="buttons" type="submit">NOVA TRIAGEM</button><br>
     </div>
 
+    <h2 id="text-date"></h2>
+
+    </form>
+    <script src="TelaTriagem.js"></script>
 </body>
 
 </html>
