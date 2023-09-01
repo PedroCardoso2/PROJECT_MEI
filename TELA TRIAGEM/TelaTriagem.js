@@ -117,7 +117,16 @@ const dtHr = setInterval(() => {
 
 });
 
+const campos = document.querySelectorAll("input, select, textarea");
 
+campos.forEach((campo, index) => {
+    campo.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" && index < campos.length - 1) {
+            event.preventDefault();
+            campos[index + 1].focus();
+        }
+    });
+});
 
 
 
