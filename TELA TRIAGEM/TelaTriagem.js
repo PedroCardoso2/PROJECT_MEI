@@ -1,44 +1,17 @@
-
 /*
-function ModDate() {
 
-
-    const date = new Date();
-
-    let number = 10;
-
-    let dayRunner = number * 24 * 60 * 60 * 1000;
-
-    const finalDate = new Date(date.getTime() + dayRunner);
-
-    let day = finalDate.getDate();
-    let month = finalDate.getMonth() + 1;
-    let year = finalDate.getFullYear();
-
-
-    if (day < 10) {
-        day = `0${day}`;
-    }
-    if(month < 10){
-        month = `0${month}`;
-    }else if(month >= 13){
-        month = "01";
-    }
-
-
-    let dateFinal = `${day} / ${month} / ${year}`;
-
-    console.log(dateFinal)
-};
-
-ModDate();
-*/
-
-
-/*
 const frm = document.querySelector("form")
 const button = document.querySelector("#save");
 const text = document.querySelector("#text-date");
+
+
+function ModDate() {
+    // caixa-jud
+    // caixa-prazo
+    //datetime-local
+};
+
+
 
 
 button.addEventListener("click", (e) => {
@@ -82,7 +55,8 @@ button.addEventListener("click", (e) => {
     console.log(formul);
     console.log(listProcess);
 
-    
+
+    ModDate();
 
 });
 
@@ -97,20 +71,46 @@ function DateText() {
 DateText();
 */
 
-const datadapublicacao = document.querySelector("#datadapublicacao");
-const button = document.getElementById("save");
+
+
+const button = document.querySelector("#save");
 
 button.addEventListener('click', () => {
-    let dataInserida = datadapublicacao.value;
-    const date = new Date(dataInserida);
+    const datadapublicacao = document.querySelector("#datadapublicacao").value;
+    const cj = document.querySelector("#caixa-jud");
+    const cp = document.querySelector("#caixa-prazo");
 
-    if(!isNaN(date)){
-        console.log(date);
-    }else{
-        console.log("não!")
-    }  
+    function FormDate() {
+        const dt = new Date(datadapublicacao);
+        const number = cj.value;
+
+        const valueDate = number * 24 * 60 * 60 * 1000;
+
+        const dateForm = new Date(dt.getTime() + valueDate);
+
+        const day = dateForm.getDate();
+        const month = dateForm.getMonth();
+        const year = dateForm.getFullYear();
+
+        let dayFormatted = day < 10 ? `0${day}` : day;
+        let monthFormatted = (month + 1) < 10 ? `0${month + 1}` : month + 1;
+
+        let dateFormFinal = `${dayFormatted} / ${monthFormatted} / ${year}`;
+
+        cp.value = dateFormFinal;
+    }
+
+    FormDate();
 
 });
 
+
+
+
+
+
+
+
+    
 
 
