@@ -1,13 +1,14 @@
-const dt = new Date();
 
 
-
-console.log(dt.setUTCDate());
 
 
 const frm = document.querySelector("form")
 const button = document.querySelector("#save");
 const text = document.querySelector("#text-date");
+
+
+
+
 
 
 button.addEventListener("click", (e) => {
@@ -118,5 +119,15 @@ const dtHr = setInterval(() => {
 
 
 
+
+
+
+
+
+
+
+
+
+    
 
 
