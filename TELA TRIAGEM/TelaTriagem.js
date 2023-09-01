@@ -1,4 +1,8 @@
+const dt = new Date();
 
+
+
+console.log(dt.setUTCDate());
 
 
 const frm = document.querySelector("form")
@@ -47,17 +51,72 @@ button.addEventListener("click", (e) => {
     console.log(formul);
     console.log(listProcess);
 
+    const datadapublicacao = document.querySelector("#datadapublicacao").value;
+    const cj = document.querySelector("#caixa-jud");
+    const cp = document.querySelector("#caixa-prazo");
+
+    function FormDate() {
+        const dt = new Date(datadapublicacao);
+        const number = cj.value;
+
+        const valueDate = number * 24 * 60 * 60 * 1000;
+
+        const dateForm = new Date(dt.getTime() + valueDate);
+
+        const day = dateForm.getDate();
+        const month = dateForm.getMonth();
+        const year = dateForm.getFullYear();
+
+        let dayFormatted = day < 10 ? `0${day}` : day;
+        let monthFormatted = (month + 1) < 10 ? `0${month + 1}` : month + 1;
+
+        let dateFormFinal = `${dayFormatted} / ${monthFormatted} / ${year}`;
+
+        cp.value = dateFormFinal;
+    }
+
+    FormDate();
+
 });
 
-function DateText() {
+const dtHr = setInterval(() => {
+    const today = new Date();
 
-    const dt = new Date();
+    let day =  today.getDate();
+    let mon = today.getMonth() + 1;
+    const years = today.getFullYear();
+    let hours = today.getHours();
+    let min = today.getMinutes();
+    let sec = today.getSeconds();
 
-    text.innerHTML = dt;
-}
+    if(day < 10){
+        day = `0${day}`;
+    }
+    if(mon < 10){
+        mon = `0${mon}`;
+    }
+    if(mon >= 13){
+        mon = 1;
+    }
+    if(hours < 10){
+        hours = `0${hours}`;
+    }
+    if(min < 10){
+        min = min `0${min}`;
+    }
+    if(sec < 10){
+        sec = `0${sec}`;
+    }
 
 
-DateText();
+    const dateConteiner = `${day} / ${mon} / ${years} | ${hours}:${min}:${sec}`;
+
+
+    text.innerHTML = dateConteiner;
+
+});
+
+
 
 
 
