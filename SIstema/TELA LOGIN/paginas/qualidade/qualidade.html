@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualidade</title>
+    <link rel="stylesheet" href="qualidade.css">
+</head>
+<body>
+
+
+    <div class="menu">
+
+        <img class="logo" src="../../__imagens/logo-adv.png (1).png" alt="" srcset="">
+        <img id="homeImg" src="../../__imagens/home.png" width="25" height="25" alt="" srcset="">
+        <a class="home" href="../home/home.html">Home</a>
+        <img class="logoutImg" src="../../__imagens/logout2.png" width="25" height="25" alt="" srcset="">
+        <a class="logout" href="../../index.html">Logout</a>
+
+    </div>
+    
+    <button class="button" id="button" type="submit" onclick="myFunction()">BUSCAR PROCESSO</button>
+    <div class="container" id="container">
+        <form class="grid-form" id="grid-form">
+        
+            <div class="campo">
+                <label id="processo" for="">Nº Processo</label>
+                <input id="processo" type="text">
+            </div>
+            
+            <div class="campo">
+                <label for="">Data da Públicação</label>
+                <input type="date" id="caixapublicacao"><br>
+            </div>    
+
+            <div class="campo">
+                <label for="">Data do BCC</label>
+                <input type="date" id="caixabcc">
+            </div>
+
+            <div class="campo">
+                <label for="">Data do Ingresso</label>
+                <input type="date" name="" id="caixaingresso">
+            </div>
+
+            <div class="campo">
+                <label for="">Escritório/Triagem</label>
+                <select name="" id="caixatratado">
+                    <option value=""></option>
+                    <option value="">Escritório</option>
+                    <option value="">Triagem</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="">Tratado Por</label>
+                <select name="" id="caixapor">
+                    <option value=""></option>
+                    <option value="">SALESFORCE</option>
+                    <option value="">E-MAIL</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="">CPF/CNPJ</label>
+                <input type="text" id="cpfcnpj">
+            </div>
+
+            <div class="campo">
+                <label for="">Autor</label>
+                <input type="text">
+            </div>
+
+            <div class="campo">
+                <label for="">UC</label>
+                <input type="text" id="uc">
+            </div>
+            
+            <div class="campo">
+                <label for="">Municipio</label>
+                <input type="text" id="caixamunicipio"> 
+            </div>
+            
+
+            
+
+            <div class="campo">
+                <label for="">Diretoria/Ação</label>
+                <select name="" id="caixadiretoria">
+                    <option value=""></option>
+                    <option value="">Mercado</option>
+                    <option value="">Grids</option>
+                    <option value="">Outros</option>
+            </select><br>
+            </div>
+
+            <div class="campo">
+                <label for="">Área</label>
+                <select name="" id="caixaarea">
+                    <option value=""></option>
+                    <option value="">Acres de carga</option>
+                    <option value="">Ambiental</option>
+                    <option value="">Cliente Vital</option>
+                    <option value="">Cobrança</option>
+                    <option value="">Corte e Religação</option>
+                    <option value="">Executivo</option>
+                    <option value="">Faturamento</option>
+                    <option value="">GD</option>
+                    <option value="">Lig Nova</option>
+                    <option value="">Manutenção</option>
+                    <option value="">Obra/Projeto</option>
+                    <option value="">Perdas/Toi</option>
+                    <option value="">Prod e Doação</option>
+                    <option value="">Ressacimento</option>
+                    <option value="">Revogada</option>
+                    <option value="">Troca de Titularidade</option>
+                </select>
+            </div>
+            
+            <div class="campo">
+                <label for="">Tipos de Decisão</label>
+                <select name="" id="caixadecisao">
+                    <option value=""></option>
+                    <option value="">Acordão</option>
+                    <option value="">Acordo</option>
+                    <option value="">Liminar</option>
+                    <option value="">Sentença</option>
+                </select>
+            </div>    
+            
+            <div class="campo">
+                <label for="">Procedimento</label>
+                <select name="" id="caixaprocedimento">
+                    <option value=""></option>
+                    <option value="">Civel</option>
+                    <option value="">Juizado Especial</option>
+                </select>
+            </div>    
+
+            <div class="campo">
+                <label for="">Qtd de Obf</label>
+                <input type="text" id="caixaobf"><br>
+            </div>    
+            
+            <div class="campo">
+                <label for="">Valor Multa</label>
+                <input type="text" id="valormulta" placeholder="R$ 0,00">
+
+            </div>
+            
+            <div class="campo">
+                <label for="">Valor Limite</label>
+                <input type="text" id="valormultalimite" placeholder="R$ 0,00">
+            </div>
+            
+            <div class="campo">
+                <label for="">Determinação Judicial</label>
+                <input type="text" id="determinacaojudicial">
+            </div>
+
+            <div class="campo">
+                <label for="">Prazo Fatal</label>
+                <input type="datetime-local" id="prazofatal">
+            </div>
+
+            
+            <div class="campo">
+                <label for="">Farol</label>
+                <input type="text" id="farol">
+            </div>
+            
+            <div class="campo">
+                <label for="">DFA</label>
+                <input type="datetime-local" id="dfa">
+            </div>
+            
+            <div class="campo">
+                <label for="">Farol Histórico</label>
+                <input type="text" id="farolhistorico">
+            </div>
+            
+            <div class="campo">
+                <label for="">Valor possível de multa</label>
+                <input type="text" id="valorpossivelmulta" placeholder="R$ 0,00"><br>
+            </div>
+            
+            <div class="campo">
+                <label for="">Em Atraso/No Prazo</label>
+                <select name="" id="atrasoprazo">
+                    <option value=""></option>
+                    <option value="">Em Atraso</option>
+                    <option value="">No Prazo</option>
+                </select>
+            </div> 
+
+            <div class="campo">
+                <label for="">Status do Processo</label>
+                <select name="" id="statusprocesso">
+                    <option value=""></option>
+                    <option value="">Feito</option>
+                    <option value="">Pendente</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="">Data Qualidade Feita</label>
+                <input type="datetime-local" id="dataqualidade">
+            </div>
+
+            <div class="campo">
+                <label for="">Data Pendente</label>
+                <input type="datetime-local" id="datapendente">
+            </div>
+
+            <div class="campo" >
+                <label for="">Observação Pendente</label>
+                <textarea name="" id="meuTextarea" cols="30" rows="3"></textarea>
+            </div>
+
+            <div class="campo">
+                <label for="">Procedente/Improcedente</label>
+                <select name="" id="procedente">
+                    <option value=""></option>
+                    <option value="">Procedente</option>
+                    <option value="">Improcedente</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="">Prazo de Atendimento</label>
+                <select name="" id="procedente">
+                    <option value=""></option>
+                    <option value="">No Prazo</option>
+                    <option value="">Fora do Prazo</option>
+                </select>
+            </div>
+
+            <div class="campo" >
+                <label for="">Observação da Improcedencia</label>
+                <textarea name="" id="meuTextarea" cols="30" rows="3"></textarea>
+            </div>
+
+            <div class="campo">
+                <label for="">Data da Cobrança</label>
+                <input type="datetime-local" id="datapendente">
+            </div>
+
+            <div class="campo">
+                <label for="">Verificação</label>
+                <select name="" id="caixaverificacao">
+                    <option value=""></option>
+                    <option value="">Entregue</option>
+                    <option value="">Entregue em Atraso</option>
+                    <option value="">Estratégico em Atraso</option>
+                    <option value="">Estratégico Pendente</option>
+                    <option value="">Estratégico Suspenso</option>
+                    <option value="">Impossibilidade</option>
+                    <option value="">Obra Pendente Atrasado</option>
+                    <option value="">Obra Suspensa</option>
+                    <option value="">Pendente</option>
+                    <option value="">Pendente Atrasado</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="">Status de Obra</label>
+                <select name="" id="caixastatusobra">
+                    <option value=""></option>
+                    <option value="">Arruamento</option>
+                    <option value="">Endereço não Localizado</option>
+                    <option value="">Impossibilidade</option>
+                    <option value="">Licença Ambiental</option>
+                    <option value="">Ligação Nova</option>
+                    <option value="">Obra Executada</option>
+                    <option value="">Obra Pendente</option>
+                    <option value="">Obra Pendente Atrasada</option>
+                    <option value="">Suspensa</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="">Data Tutela</label>
+                <input type="datetime-local" id="datatutela">
+            </div>
+
+            <div class="campo">
+                <label for="">Data Cumprimento</label>
+                <input type="datetime-local" id="datacumprimento">
+            </div>
+
+            <div class="campo">
+                <label for="">Data Qualidade</label>
+                <input type="datetime-local" id="dataqualidade">
+            </div>
+
+        </form>
+
+        <div class="campo" >
+            <label for="">Descrição de Obrigação</label>
+            <textarea name="" id="meuTextarea" cols="100" rows="10"></textarea>
+        </div>
+
+        <div class="buttons">
+            <button id="buttons" type="submit">SALVAR</button>
+            <button id="buttons" type="submit">EDITAR</button>
+            <button id="buttons" type="submit">IMPORTAR</button>
+            <button id="buttons" type="submit">EXPORTAR</button>
+        </div>
+    </div>
+    <script src="qualidade.js"></script>
+</body>
+</html>

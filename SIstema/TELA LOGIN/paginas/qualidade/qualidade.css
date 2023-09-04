@@ -1,0 +1,288 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+body{
+    background-color: #ffffff;
+    /* background-color: #ccc; */
+}
+
+/*CSS do Menu*/
+.menu {
+    display:flex;
+    position: fixed;
+    top: 0;
+    background-color: #2b2929;
+    padding-top: 120px;
+    width: 100%;
+}
+
+.menu a {
+    font-size: 20px;
+    text-decoration: 10px;
+    color: #ffffff;
+}
+
+.logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 130px;
+    width: 170px;
+}
+
+@keyframes fade {
+    0% {
+      opacity: 1;
+    }
+  50% {
+  opacity: 0.5;
+}
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo {
+  animation: fade 3s ease-in-out infinite;
+}
+
+.home{
+    margin-left: 275px;
+    position: fixed;
+    top: 0; /* Define a distância do topo da tela */
+    left: 0; /*Define a distância da direita da tela*/
+    margin-top: 50px; 
+    
+}
+
+#homeImg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    margin-left: 245px;
+    background-color: #2b2929;
+}
+
+.logout {
+    position: fixed;
+    top: 0; /* Define a distância do topo da tela */
+    right: 0; /*Define a distância da direita da tela*/
+    align-items: center;
+    margin-top: 50px; 
+    margin-right: 100px;
+}
+
+.logoutImg{
+    margin-top: 52px;
+    position: fixed;
+    top: 0; /* Define a distância do topo da tela*/  
+    right: 170px; /* Define a distância da direita da tela*/
+    background-color: #2b2929;
+}
+
+/*CSS do corpo*/
+
+.container{
+    display: none;
+}
+
+.grid-form {
+    display: grid;
+    margin-top: -50px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+
+
+/*  */
+
+
+
+.campo {
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px;
+}
+
+label {
+    font-weight: bold;
+    padding-bottom: 7px;
+    max-width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+ 
+input {
+    width: 220px;
+    padding: 3,5px;
+}
+
+select {
+    width: 220px;
+    padding-top: 3.8px;
+}
+
+#caixapublicacao{
+    width: 140px;
+}
+
+#caixabcc{
+    width: 140px;
+}
+
+#caixaingresso{
+    width: 140px;
+}
+
+#caixatratado{
+    width: 100px;
+}
+
+#caixapor{
+    width: 110px;
+}
+
+#caixadiretoria{
+    width: 110px;
+}
+
+#caixaarea{
+    width: 160px;
+}
+
+#caixadecisao{
+    width: 110px;
+}
+
+#caixaprocedimento{
+    width: 140px;
+}
+
+#caixaobf{
+    width: 60px;
+}
+
+#valormulta{
+    width: 100px;
+}
+
+#valormultalimite{
+    width: 100px;
+}
+
+#valorpossivelmulta{
+    width: 100px;
+}
+
+#prazofatal{
+    width: 130px;
+}
+
+#farol{
+    width: 100px;
+}
+
+#farolhistorico{
+    width: 90px;
+}
+
+#dfa{
+    width: 130px;
+}
+
+#cpfcnpj{
+    width: 150px;
+}
+
+#uc{
+    width: 150px;
+}
+
+#caixamunicipio{
+    width: 150px;
+}
+
+#determinacaojudicial{
+    width: 40px;
+}
+
+#atrasoprazo{
+    width: 110px;
+}
+
+#statusprocesso{
+    width: 100px;
+}
+
+#dataqualidade{
+    width: 100px;
+}
+
+#datapendente{
+    width: 100px;
+}
+
+#procedente{
+    width: 125px;
+}
+
+#caixaverificacao{
+    width: 175px;
+}
+
+#caixastatusobra{
+    width: 180px;
+}
+
+#datatutela{
+    width: 130px;
+}
+
+#datacumprimento{
+    width: 130px;
+}
+
+#dataqualidade{
+    width: 130px;
+}
+
+
+
+.button{
+    margin: 10px 10px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 95px;
+    padding: 5px;
+    font-weight: bold;
+
+    /* border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 200px;
+    margin-right: 1100px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7); */
+}
+
+.button:active{
+    box-shadow: none;
+  }
+
+  .buttons{
+    margin: 10px 10px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-left: 1100px;
+}
+
+

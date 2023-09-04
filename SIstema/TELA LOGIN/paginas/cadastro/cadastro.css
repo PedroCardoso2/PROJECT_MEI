@@ -1,0 +1,265 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.f-conteiner{
+    display: none;
+    margin-top: -80px;
+}
+
+
+.grid-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.campo {
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px;
+    
+}
+
+#text-date{
+    color: white;
+    margin-left: 70pc;
+    margin-top: -15px;
+}
+
+/* INPUTS */
+
+#determinacaojudicial{
+    width: 40px;
+}
+
+#caixatipojustica{
+    width: 116px;
+    
+}
+
+#caixatipomulta{
+    width: 116px;
+}
+
+#datachegada{
+    width: 116px;
+    text-align: center;
+}
+
+#datatratadotriagem{
+    width: 146px;
+    text-align: center;
+}
+
+#datafato{
+    width: 126px;
+    text-align: center;
+}
+
+#valormulta{
+    width: 105px;
+}
+
+#valormultalimite{
+    width: 105px;
+    
+}
+
+#cpf{
+    width: 150px;
+    text-align: center;
+}
+
+#uc{
+    width: 150px;
+    text-align: center;
+}
+
+#municipio{
+    width: 160px;
+    text-align: center;
+}
+
+#dataprazofatal{
+    width: 140px;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    padding-bottom: 7px;
+    max-width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+input {
+    width: 220px;
+    padding-top: 3.8px;
+}
+
+select {
+    width: 220px;
+    padding-top: 3.8px;
+}
+
+.buttons{
+    margin: 9px 9px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 65pc;
+}
+
+#botaonovocadastro {
+    margin: 10px 10px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 105px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#ndoprocesso{
+    text-align: center;
+}
+
+#tipovara{
+    text-align: center;
+}
+
+#autor{
+    text-align: center;
+}
+
+#objetoespecifico{
+    text-align: center;
+}
+
+#detalhe{
+    text-align: center;
+}
+
+#serie{
+    text-align: center;
+}
+
+#hashtag{
+    text-align: center;
+}
+
+#agregado{
+    text-align: center;
+}
+
+#situacaoliminar{
+    text-align: center;
+}
+
+#situacaoprocessual{
+    text-align: center;
+}
+
+#obrigacaodefazer{
+    text-align: center;
+}
+
+#determinacaojudicial{
+    text-align: center;
+}
+
+#responsavel{
+    text-align: center;
+}
+
+
+@keyframes fade {
+    0% {
+      opacity: 1;
+    }
+  50% {
+  opacity: 0.5;
+}
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo {
+    animation: fade 3s ease-in-out infinite;
+  }
+
+/* PÓS INPUTS */
+
+.menu {
+    display:flex;
+    position: fixed;
+    top: 0;
+    background-color: #2b2929;
+    padding-top: 120px;
+    width: 100%;
+}
+
+.menu a {
+    font-size: 20px;
+    text-decoration: 10px;
+    color: #ffffff;
+}
+
+.logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 130px;
+    width: 170px;
+}
+
+.home{
+    margin-left: 280px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+}
+
+#homeImg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    margin-left: 245px;
+    background-color: #2b2929;
+}
+
+.logout {
+    position: fixed;
+    top: 0; /* Define a distância do topo da tela */
+    right: 0; /*Define a distância da direita da tela*/
+    align-items: center;
+    margin-top: 50px; 
+    margin-right: 100px;
+}
+
+.logoutImg{
+    margin-top: 52px;
+    position: fixed;
+    top: 0; /* Define a distância do topo da tela*/  
+    right: 170px; /* Define a distância da direita da tela*/
+    background-color: #2b2929;
+}
+
+
+
+
