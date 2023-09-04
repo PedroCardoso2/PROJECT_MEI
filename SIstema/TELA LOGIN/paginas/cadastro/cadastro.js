@@ -105,20 +105,31 @@ const dtHr = setInterval(() => {
 
 
 
-const numberoProcess = document.querySelector("#ndoprocesso").value;
-const cpf = document.querySelector("#cpf").value;
-const uc = document.querySelector("#uc").value;
-const municipio = document.querySelector("#municipio").value;
-const tipVara = document.querySelector("#tipovara").value;
-const dataChegada = document.querySelector("#datachegada").value;
-const obrigacaoFazer = document.querySelector("#obrigacao-fazer").value;
-const valorMult = document.querySelector("#valor-mult").value;
-const valorLimit = document.querySelector("#valor-limit").value;
-const tipoMult = document.querySelector("#caixa-multa").value;
-const determinacaoJud = document.querySelector("#caixa-jud").value;
-const prazoFinal = document.querySelector("#caixa-prazo").value;
+const inputNumeroProcesso = document.querySelector("#ndoprocesso");
+const inputCPF = document.querySelector("#cpf");
+const inputUC = document.querySelector("#uc");
+const inputMunicipio = document.querySelector("#municipio");
+const inputTipoVara = document.querySelector("#tipovara");
+const inputDataChegada = document.querySelector("#datachegada");
+const inputDataTratadoTriagem = document.querySelector("#datatratadotriagem");
+const selectTipoJustica = document.querySelector("#caixatipojustica");
+const inputAutor = document.querySelector("#autor");
+const inputObjetoEspecifico = document.querySelector("#objetoespecifico");
+const inputDetalhe = document.querySelector("#detalhe");
+const inputSerie = document.querySelector("#serie");
+const inputHashtag = document.querySelector("#hashtag");
+const inputAgregado = document.querySelector("#agregado");
+const inputDataFato = document.querySelector("#datafato");
+const inputSituacaoLiminar = document.querySelector("#situacaoliminar");
+const inputSituacaoProcessual = document.querySelector("#situacaoprocessual");
+const inputObrigacaoFazer = document.querySelector("#obrigacaodefazer");
+const inputValorMulta = document.querySelector("#valormulta");
+const inputValorMultaLimite = document.querySelector("#valormultalimite");
+const selectTipoMulta = document.querySelector("#caixatipomulta");
+const inputDeterminacaoJudicial = document.querySelector("#determinacaojudicial");
+const inputDataPrazoFatal = document.querySelector("#dataprazofatal");
+const inputResponsavel = document.querySelector("#responsavel");
 
 
 
-
-
+const numeroProcesso = inputNumeroProcesso.value;
