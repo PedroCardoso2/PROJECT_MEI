@@ -1,3 +1,36 @@
+const inputNumeroProcesso = document.querySelector("#ndoprocesso");
+const inputCPF = document.querySelector("#cpf");
+const inputUC = document.querySelector("#uc");
+const inputMunicipio = document.querySelector("#municipio");
+const inputTipoVara = document.querySelector("#tipovara");
+const inputDataChegada = document.querySelector("#datachegada");
+const inputDataTratadoTriagem = document.querySelector("#datatratadotriagem");
+const selectTipoJustica = document.querySelector("#caixatipojustica");
+const inputAutor = document.querySelector("#autor");
+const inputObjetoEspecifico = document.querySelector("#objetoespecifico");
+const inputDetalhe = document.querySelector("#detalhe");
+const inputSerie = document.querySelector("#serie");
+const inputHashtag = document.querySelector("#hashtag");
+const inputAgregado = document.querySelector("#agregado");
+const inputDataFato = document.querySelector("#datafato");
+const inputSituacaoLiminar = document.querySelector("#situacaoliminar");
+const inputSituacaoProcessual = document.querySelector("#situacaoprocessual");
+const inputObrigacaoFazer = document.querySelector("#obrigacaodefazer");
+const inputValorMulta = document.querySelector("#valormulta");
+const inputValorMultaLimite = document.querySelector("#valormultalimite");
+const selectTipoMulta = document.querySelector("#caixatipomulta");
+const inputDeterminacaoJudicial = document.querySelector("#determinacaojudicial");
+const inputDataPrazoFatal = document.querySelector("#dataprazofatal");
+const inputResponsavel = document.querySelector("#responsavel");
+
+const saveButton = document.querySelector(".save-button");
+
+const numeroProcesso = inputNumeroProcesso.value;
+
+
+
+
+
 var valorInput = document.getElementById('valormulta');
 
         // Formatando o valor enquanto digita
@@ -66,6 +99,7 @@ botaoMostrarDiv.addEventListener("click", function() {
 
 
 /* Modificações do Pedro Cardoso*/
+
 const text = document.querySelector("#text-date");
 
 const dtHr = setInterval(() => {
@@ -103,33 +137,40 @@ const dtHr = setInterval(() => {
  
 });
 
+ 
+saveButton.addEventListener("click", () => {
+    const formulario = {
+        numeroProcesso: document.querySelector("#ndoprocesso"),
+        cpf: document.querySelector("#cpf"),
+        uc: document.querySelector("#uc"),
+        municipio: document.querySelector("#municipio"),
+        tipoVara: document.querySelector("#tipovara"),
+        dataChegada: document.querySelector("#datachegada"),
+        dataTratadoTriagem: document.querySelector("#datatratadotriagem"),
+        tipoJustica: document.querySelector("#caixatipojustica"),
+        autor: document.querySelector("#autor"),
+        objetoEspecifico: document.querySelector("#objetoespecifico"),
+        detalhe: document.querySelector("#detalhe"),
+        serie: document.querySelector("#serie"),
+        hashtag: document.querySelector("#hashtag"),
+        agregado: document.querySelector("#agregado"),
+        dataFato: document.querySelector("#datafato"),
+        situacaoLiminar: document.querySelector("#situacaoliminar"),
+        situacaoProcessual: document.querySelector("#situacaoprocessual"),
+        obrigacaoFazer: document.querySelector("#obrigacaodefazer"),
+        valorMulta: document.querySelector("#valormulta"),
+        valorMultaLimite: document.querySelector("#valormultalimite"),
+        tipoMulta: document.querySelector("#caixatipomulta"),
+        determinacaoJudicial: document.querySelector("#determinacaojudicial"),
+        dataPrazoFatal: document.querySelector("#dataprazofatal"),
+        responsavel: document.querySelector("#responsavel")
+      };
+    
+      const strgSql = JSON.stringify(formulario);
+
+      localStorage.setItem("Cadatro", strgSql);
+
+      console.log(formulario);
+});
 
 
-const inputNumeroProcesso = document.querySelector("#ndoprocesso");
-const inputCPF = document.querySelector("#cpf");
-const inputUC = document.querySelector("#uc");
-const inputMunicipio = document.querySelector("#municipio");
-const inputTipoVara = document.querySelector("#tipovara");
-const inputDataChegada = document.querySelector("#datachegada");
-const inputDataTratadoTriagem = document.querySelector("#datatratadotriagem");
-const selectTipoJustica = document.querySelector("#caixatipojustica");
-const inputAutor = document.querySelector("#autor");
-const inputObjetoEspecifico = document.querySelector("#objetoespecifico");
-const inputDetalhe = document.querySelector("#detalhe");
-const inputSerie = document.querySelector("#serie");
-const inputHashtag = document.querySelector("#hashtag");
-const inputAgregado = document.querySelector("#agregado");
-const inputDataFato = document.querySelector("#datafato");
-const inputSituacaoLiminar = document.querySelector("#situacaoliminar");
-const inputSituacaoProcessual = document.querySelector("#situacaoprocessual");
-const inputObrigacaoFazer = document.querySelector("#obrigacaodefazer");
-const inputValorMulta = document.querySelector("#valormulta");
-const inputValorMultaLimite = document.querySelector("#valormultalimite");
-const selectTipoMulta = document.querySelector("#caixatipomulta");
-const inputDeterminacaoJudicial = document.querySelector("#determinacaojudicial");
-const inputDataPrazoFatal = document.querySelector("#dataprazofatal");
-const inputResponsavel = document.querySelector("#responsavel");
-
-
-
-const numeroProcesso = inputNumeroProcesso.value;
