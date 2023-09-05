@@ -137,40 +137,71 @@ const dtHr = setInterval(() => {
  
 });
 
- 
+// Add localStorage
+
+
+
+
 saveButton.addEventListener("click", () => {
+  
     const formulario = {
-        numeroProcesso: document.querySelector("#ndoprocesso"),
-        cpf: document.querySelector("#cpf"),
-        uc: document.querySelector("#uc"),
-        municipio: document.querySelector("#municipio"),
-        tipoVara: document.querySelector("#tipovara"),
-        dataChegada: document.querySelector("#datachegada"),
-        dataTratadoTriagem: document.querySelector("#datatratadotriagem"),
-        tipoJustica: document.querySelector("#caixatipojustica"),
-        autor: document.querySelector("#autor"),
-        objetoEspecifico: document.querySelector("#objetoespecifico"),
-        detalhe: document.querySelector("#detalhe"),
-        serie: document.querySelector("#serie"),
-        hashtag: document.querySelector("#hashtag"),
-        agregado: document.querySelector("#agregado"),
-        dataFato: document.querySelector("#datafato"),
-        situacaoLiminar: document.querySelector("#situacaoliminar"),
-        situacaoProcessual: document.querySelector("#situacaoprocessual"),
-        obrigacaoFazer: document.querySelector("#obrigacaodefazer"),
-        valorMulta: document.querySelector("#valormulta"),
-        valorMultaLimite: document.querySelector("#valormultalimite"),
-        tipoMulta: document.querySelector("#caixatipomulta"),
-        determinacaoJudicial: document.querySelector("#determinacaojudicial"),
-        dataPrazoFatal: document.querySelector("#dataprazofatal"),
-        responsavel: document.querySelector("#responsavel")
-      };
-    
-      const strgSql = JSON.stringify(formulario);
+    numeroProcesso: document.querySelector("#ndoprocesso").value,
+    cpf: document.querySelector("#cpf").value,
+    uc: document.querySelector("#uc").value,
+    municipio: document.querySelector("#municipio").value,
+    tipoVara: document.querySelector("#tipovara").value,
+    dataChegada: document.querySelector("#datachegada").value,
+    dataTratadoTriagem: document.querySelector("#datatratadotriagem").value,
+    tipoJustica: document.querySelector("#caixatipojustica").value,
+    autor: document.querySelector("#autor").value,
+    objetoEspecifico: document.querySelector("#objetoespecifico").value,
+    detalhe: document.querySelector("#detalhe").value,
+    serie: document.querySelector("#serie").value,
+    hashtag: document.querySelector("#hashtag").value,
+    agregado: document.querySelector("#agregado").value,
+    dataFato: document.querySelector("#datafato").value,
+    situacaoLiminar: document.querySelector("#situacaoliminar").value,
+    situacaoProcessual: document.querySelector("#situacaoprocessual").value,
+    obrigacaoFazer: document.querySelector("#obrigacaodefazer").value,
+    valorMulta: document.querySelector("#valormulta").value,
+    valorMultaLimite: document.querySelector("#valormultalimite").value,
+    tipoMulta: document.querySelector("#caixatipomulta").value,
+    determinacaoJudicial: document.querySelector("#determinacaojudicial").value,
+    dataPrazoFatal: document.querySelector("#dataprazofatal").value,
+    responsavel: document.querySelector("#responsavel").value
+  };
 
-      localStorage.setItem("Cadatro", strgSql);
+  
+  const strgSql = JSON.stringify(formulario);
 
-      console.log(formulario);
+  
+  localStorage.setItem("Cadastro", strgSql);
+
+  
+  document.querySelector("#ndoprocesso").value = "";
+  document.querySelector("#cpf").value = "";
+  document.querySelector("#uc").value = "";
+  document.querySelector("#municipio").value = "";
+  document.querySelector("#tipovara").value = "";
+  document.querySelector("#datachegada").value = "";
+  document.querySelector("#datatratadotriagem").value = "";
+  document.querySelector("#caixatipojustica").value = "";
+  document.querySelector("#autor").value = "";
+  document.querySelector("#objetoespecifico").value = "";
+  document.querySelector("#detalhe").value = "";
+  document.querySelector("#serie").value = "";
+  document.querySelector("#hashtag").value = "";
+  document.querySelector("#agregado").value = "";
+  document.querySelector("#datafato").value = "";
+  document.querySelector("#situacaoliminar").value = "";
+  document.querySelector("#situacaoprocessual").value = "";
+  document.querySelector("#obrigacaodefazer").value = "";
+  document.querySelector("#valormulta").value = "";
+  document.querySelector("#valormultalimite").value = "";
+  document.querySelector("#caixatipomulta").value = "";
+  document.querySelector("#determinacaojudicial").value = "";
+  document.querySelector("#dataprazofatal").value = "";
+  document.querySelector("#responsavel").value = "";
 });
 
 
