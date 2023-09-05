@@ -1,3 +1,5 @@
+
+
 const inputNumeroProcesso = document.querySelector("#ndoprocesso");
 const inputCPF = document.querySelector("#cpf");
 const inputUC = document.querySelector("#uc");
@@ -16,7 +18,7 @@ const inputDataFato = document.querySelector("#datafato");
 const inputSituacaoLiminar = document.querySelector("#situacaoliminar");
 const inputSituacaoProcessual = document.querySelector("#situacaoprocessual");
 const inputObrigacaoFazer = document.querySelector("#obrigacaodefazer");
-const inputValorMulta = document.querySelector("#valormulta");
+const inputValorMulta = document.querySelector("#caixatipomulta");
 const inputValorMultaLimite = document.querySelector("#valormultalimite");
 const selectTipoMulta = document.querySelector("#caixatipomulta");
 const inputDeterminacaoJudicial = document.querySelector("#determinacaojudicial");
@@ -25,183 +27,141 @@ const inputResponsavel = document.querySelector("#responsavel");
 
 const saveButton = document.querySelector(".save-button");
 
-const numeroProcesso = inputNumeroProcesso.value;
-
-
-
-
-
-var valorInput = document.getElementById('valormulta');
-
-        // Formatando o valor enquanto digita
-        valorInput.addEventListener('input', function() {
-            var valor = this.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
-            var formattedValue = formatCurrency(valor); // Formata o valor
-            this.value = formattedValue;
-        });
-
-        // Função para formatar o número como moeda
-        function formatCurrency(value) {
-            if (value === '') {
-                return '';
-            }
-
-            var number = parseFloat(value) / 100; // Divide por 100 para adicionar as casas decimais
-            return 'R$ ' + number.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
-        }
-
-var valorLimite = document.getElementById('valormultalimite');
-
-        // Formatando o valor enquanto digita
-        valorLimite.addEventListener('input', function() {
-            var valor = this.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
-            var formattedValue = formatCurrency(valor); // Formata o valor
-            this.value = formattedValue;
-        });
-
-        // Função para formatar o número como moeda
-        function formatCurrency(value) {
-            if (value === '') {
-                return '';
-            }
-
-            var number = parseFloat(value) / 100; // Divide por 100 para adicionar as casas decimais
-            return 'R$ ' + number.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
-        }
-
-        
-const botaoMostrarDiv = document.getElementById("botaonovocadastro");
-const minhaDiv = document.getElementById("f-conteiner");
-        
-botaoMostrarDiv.addEventListener("click", function() {
-// Verifica se a div está escondida
-    if (minhaDiv.style.display === "none") {
-// Se estiver escondida, mostra-a
-        minhaDiv.style.display = "block";
-    } else {
-// Se não estiver escondida, esconde-a
-        minhaDiv.style.display = "none";
+// Função para formatar o número como moeda
+function formatCurrency(value) {
+    if (value === '') {
+        return '';
     }
+
+    const number = parseFloat(value) / 100; // Divide por 100 para adicionar as casas decimais
+    return 'R$ ' + number.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+}
+
+// Adicione um ouvinte de evento a todos os campos de entrada
+const campos = document.querySelectorAll("input, select");
+
+campos.forEach((campo, index) => {
+    campo.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" && index < campos.length - 1) {
+            event.preventDefault();
+            campos[index + 1].focus();
+        }
+    });
 });
 
- // Adicione um ouvinte de evento a todos os campos de entrada
- const campos = document.querySelectorAll("input, select");
+// Função para mostrar/ocultar a div
+const botaoMostrarDiv = document.getElementById("botaonovocadastro");
+const minhaDiv = document.getElementById("f-conteiner");
 
- campos.forEach((campo, index) => {
-     campo.addEventListener("keydown", function (event) {
-         if (event.key === "Enter" && index < campos.length - 1) {
-             event.preventDefault();
-             campos[index + 1].focus();
-         }
-     });
- });
+botaoMostrarDiv.addEventListener("click", function () {
+    if (minhaDiv.style.display === "none") {
+        minhaDiv.style.display = "block";
+    } else {
+        minhaDiv.style.display = "none";
+        campos.forEach((campo) => {
+            campo.value = "";
+        });
+    }
 
 
+});
 
-/* Modificações do Pedro Cardoso*/
+// Formatando os campos de valor enquanto digita
+const valorInput = document.getElementById('valormulta');
+const valorLimite = document.getElementById('valormultalimite');
 
+function formatValorInput(input) {
+    input.addEventListener('input', function () {
+        const valor = this.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+        const formattedValue = formatCurrency(valor); // Formata o valor
+        this.value = formattedValue;
+    });
+}
+
+formatValorInput(valorInput);
+formatValorInput(valorLimite);
+
+// Obtendo a data atual
 const text = document.querySelector("#text-date");
 
 const dtHr = setInterval(() => {
     const today = new Date();
- 
-    let day =  today.getDate();
+
+    let day = today.getDate();
     let mon = today.getMonth() + 1;
     const years = today.getFullYear();
     let hours = today.getHours();
     let min = today.getMinutes();
     let sec = today.getSeconds();
- 
-    if(day < 10){
+
+    if (day < 10) {
         day = `0${day}`;
     }
-    if(mon < 10){
+    if (mon < 10) {
         mon = `0${mon}`;
     }
-    if(mon >= 13){
+    if (mon >= 13) {
         mon = 1;
     }
-    if(hours < 10){
+    if (hours < 10) {
         hours = `0${hours}`;
     }
-    if(min < 10){
-        min = min `0${min}`;
+    if (min < 10) {
+        min = `0${min}`;
     }
-    if(sec < 10){
+    if (sec < 10) {
         sec = `0${sec}`;
     }
- 
+
     const dateConteiner = `${day} / ${mon} / ${years} | ${hours}:${min}:${sec}`;
- 
+
     text.innerHTML = dateConteiner;
- 
-});
+}, 1000);
 
-// Add localStorage
-
-
-
-
-saveButton.addEventListener("click", () => {
-  
+// Adicione um ouvinte de evento para salvar os dados no localStorage
+saveButton.addEventListener("click", (e) => {
     const formulario = {
-    numeroProcesso: document.querySelector("#ndoprocesso").value,
-    cpf: document.querySelector("#cpf").value,
-    uc: document.querySelector("#uc").value,
-    municipio: document.querySelector("#municipio").value,
-    tipoVara: document.querySelector("#tipovara").value,
-    dataChegada: document.querySelector("#datachegada").value,
-    dataTratadoTriagem: document.querySelector("#datatratadotriagem").value,
-    tipoJustica: document.querySelector("#caixatipojustica").value,
-    autor: document.querySelector("#autor").value,
-    objetoEspecifico: document.querySelector("#objetoespecifico").value,
-    detalhe: document.querySelector("#detalhe").value,
-    serie: document.querySelector("#serie").value,
-    hashtag: document.querySelector("#hashtag").value,
-    agregado: document.querySelector("#agregado").value,
-    dataFato: document.querySelector("#datafato").value,
-    situacaoLiminar: document.querySelector("#situacaoliminar").value,
-    situacaoProcessual: document.querySelector("#situacaoprocessual").value,
-    obrigacaoFazer: document.querySelector("#obrigacaodefazer").value,
-    valorMulta: document.querySelector("#valormulta").value,
-    valorMultaLimite: document.querySelector("#valormultalimite").value,
-    tipoMulta: document.querySelector("#caixatipomulta").value,
-    determinacaoJudicial: document.querySelector("#determinacaojudicial").value,
-    dataPrazoFatal: document.querySelector("#dataprazofatal").value,
-    responsavel: document.querySelector("#responsavel").value
-  };
+        numeroProcesso: inputNumeroProcesso.value,
+        cpf: inputCPF.value,
+        uc: inputUC.value,
+        municipio: inputMunicipio.value,
+        tipoVara: inputTipoVara.value,
+        dataChegada: inputDataChegada.value,
+        dataTratadoTriagem: inputDataTratadoTriagem.value,
+        tipoJustica: selectTipoJustica.value,
+        autor: inputAutor.value,
+        objetoEspecifico: inputObjetoEspecifico.value,
+        detalhe: inputDetalhe.value,
+        serie: inputSerie.value,
+        hashtag: inputHashtag.value,
+        agregado: inputAgregado.value,
+        dataFato: inputDataFato.value,
+        situacaoLiminar: inputSituacaoLiminar.value,
+        situacaoProcessual: inputSituacaoProcessual.value,
+        obrigacaoFazer: inputObrigacaoFazer.value,
+        valorMulta: inputValorMulta.value,
+        valorMultaLimite: inputValorMultaLimite.value,
+        tipoMulta: selectTipoMulta.value,
+        determinacaoJudicial: inputDeterminacaoJudicial.value,
+        dataPrazoFatal: inputDataPrazoFatal.value,
+        responsavel: inputResponsavel.value
+    };
 
-  
-  const strgSql = JSON.stringify(formulario);
+    const strgSql = JSON.stringify(formulario);
 
-  
-  localStorage.setItem("Cadastro", strgSql);
+    localStorage.setItem("Cadastro", strgSql);
 
-  
-  document.querySelector("#ndoprocesso").value = "";
-  document.querySelector("#cpf").value = "";
-  document.querySelector("#uc").value = "";
-  document.querySelector("#municipio").value = "";
-  document.querySelector("#tipovara").value = "";
-  document.querySelector("#datachegada").value = "";
-  document.querySelector("#datatratadotriagem").value = "";
-  document.querySelector("#caixatipojustica").value = "";
-  document.querySelector("#autor").value = "";
-  document.querySelector("#objetoespecifico").value = "";
-  document.querySelector("#detalhe").value = "";
-  document.querySelector("#serie").value = "";
-  document.querySelector("#hashtag").value = "";
-  document.querySelector("#agregado").value = "";
-  document.querySelector("#datafato").value = "";
-  document.querySelector("#situacaoliminar").value = "";
-  document.querySelector("#situacaoprocessual").value = "";
-  document.querySelector("#obrigacaodefazer").value = "";
-  document.querySelector("#valormulta").value = "";
-  document.querySelector("#valormultalimite").value = "";
-  document.querySelector("#caixatipomulta").value = "";
-  document.querySelector("#determinacaojudicial").value = "";
-  document.querySelector("#dataprazofatal").value = "";
-  document.querySelector("#responsavel").value = "";
+    if(formulario == null){
+        alert("finalizar!");
+    }
+    if(formulario != null){
+        alert("Preencha as colunas !");
+    }
+    
+    
+    e.preventDefault();
 });
+
+
 
 
