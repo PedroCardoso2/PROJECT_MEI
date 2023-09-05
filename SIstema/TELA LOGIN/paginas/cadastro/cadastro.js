@@ -35,7 +35,9 @@ function formatCurrency(value) {
 
     const number = parseFloat(value) / 100; // Divide por 100 para adicionar as casas decimais
     return 'R$ ' + number.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
-}
+};
+
+
 
 // Adicione um ouvinte de evento a todos os campos de entrada
 const campos = document.querySelectorAll("input, select");
@@ -65,6 +67,21 @@ botaoMostrarDiv.addEventListener("click", function () {
 
 
 });
+
+
+/* MODIFICAÇÕES DO PEDRO CARDOSO */
+
+function verficaValor(formulario) {
+    for (let chave in formulario) {
+        if (chave === null || chave === "") {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+
 
 // Formatando os campos de valor enquanto digita
 const valorInput = document.getElementById('valormulta');
@@ -147,18 +164,48 @@ saveButton.addEventListener("click", (e) => {
         responsavel: inputResponsavel.value
     };
 
-    const strgSql = JSON.stringify(formulario);
+    const strgSql = JSON.stringify(formulario.tipoMulta);
 
     localStorage.setItem("Cadastro", strgSql);
 
-    if(formulario == null){
-        alert("finalizar!");
-    }
-    if(formulario != null){
-        alert("Preencha as colunas !");
-    }
+
+
+    if (
+        formulario.numeroProcesso === "" ||
+        formulario.cpf === "" ||
+        formulario.uc === "" ||
+        formulario.municipio === "" ||
+        formulario.tipoVara === "" ||
+        formulario.dataChegada === "" ||
+        formulario.dataTratadoTriagem === "" ||
+        formulario.tipoJustica === "" ||
+        formulario.autor === "" ||
+        formulario.objetoEspecifico === "" ||
+        formulario.detalhe === "" ||
+        formulario.serie === "" ||
+        formulario.hashtag === "" ||
+        formulario.agregado === "" ||
+        formulario.dataFato === "" ||
+        formulario.situacaoLiminar === "" ||
+        formulario.situacaoProcessual === "" ||
+        formulario.obrigacaoFazer === "" ||
+        formulario.valorMulta === "" ||
+        formulario.valorMultaLimite === "" ||
+        formulario.tipoMulta === "" ||
+        formulario.determinacaoJudicial === "" ||
+        formulario.dataPrazoFatal === "" ||
+        formulario.responsavel === ""
+      ) {
+        alert("Preencha todos os campos obrigatórios!");
+      } else {
+        alert("Finalizado!");
+      }
+      
     
-    
+
+    console.log(formulario);
+
+
     e.preventDefault();
 });
 
