@@ -163,12 +163,7 @@ saveButton.addEventListener("click", (e) => {
         dataPrazoFatal: inputDataPrazoFatal.value,
         responsavel: inputResponsavel.value
     };
-
-    const strgSql = JSON.stringify(formulario.tipoMulta);
-
-    localStorage.setItem("Cadastro", strgSql);
-
-
+  
 
     if (
         formulario.numeroProcesso === "" ||
@@ -201,7 +196,10 @@ saveButton.addEventListener("click", (e) => {
         alert("Finalizado!");
       }
       
-    
+    const strgSql = JSON.stringify(formulario.tipoMulta);
+
+    localStorage.setItem("Cadastro", strgSql);
+
 
     console.log(formulario);
 
