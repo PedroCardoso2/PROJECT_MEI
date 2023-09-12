@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cumprimento.css">
+    <link rel="shortcut icon" href="imagem/imgicon.png" type="image/x-icon" class="icon">
+    <title>CUMPRIMENTO</title>
+    <link rel="stylesheet" href="cumprimento.css">
+    <link rel="stylesheet" href="cumprimento.css">
+</head>
+
+<body>
+    
+    
+    
+    <div class="menu">
+
+        <img class="logo" src="../../__imagens/logo-adv.png (1).png" alt="" srcset="">
+        <img id="homeImg" src="../../__imagens/home.png" width="25" height="25" alt="" srcset="">
+        <a class="home" href="../home/home.html">Home</a>
+        <div id="text-date">
+            <h2 class="data-form"></h2>
+            <h2 class="hours"></h2>
+        </div>
+        <img class="logoutImg" src="../../__imagens/logout2.png" width="25" height="25" alt="" srcset="">
+        <a class="logout" href="../../index.html">Logout</a>
+
+    </div>
+
+    <button id="botaonovocumprimento" type="submit">NOVO CUMPRIMENTO</button>
+    <button id="pesquisarProcesso" type="submit">PESQUISAR PROCESSO</button>
+
+    
+    <div class="f-conteiner" id="f-conteiner">
+        
+        <form class="grid-form" id="grid-form">
+            <div class="campo">
+                <label for="ndoprocesso">Nº do Processo</label>
+                <input type="text" id="ndoprocesso" name="ndoprocesso" maxlength="25">
+            </div>
+            <div class="campo">
+                <label for="datadapublicacao">Data da Publicação</label>
+                <input type="datetime-local" id="datadapublicacao" name="datadapublicacao">
+            </div>
+            <div class="campo">
+                <label for="datadobcc">Data do BCC</label>
+                <input type="datetime-local" id="datadobcc" name="datadobcc">
+            </div>
+            <div class="campo">
+                <label for="datadoingresso">Data do Ingresso</label>
+                <input type="datetime-local" id="datadoingresso" name="datadoingresso">
+            </div>
+            <div class="campo">
+                <label for="escritoriotriagem">Escritório/Triagem</label>
+                <select for id="escritoriotriagem">
+                  <option value=""></option>
+                  <option value="triagem">TRIAGEM</option>
+                  <option value="escritorio">ESCRITÓRIO</option>
+              </select>
+            </div>
+            <div class="campo">
+                <label for="emailsalesforce">E-mail/Salesforce</label>
+                <select for id="emailsalesforce">
+                  <option value=""></option>
+                  <option value="email">E-MAIL</option>
+                  <option value="salesforce">SALESFORCE</option>
+              </select>
+            </div>
+            <div class="campo">
+                <label for="cpfcnpj">CPF/CNPJ</label>
+                <input type="text" id="cpfcnpj" name="cpfcnpj" maxlength="14">
+            </div>
+            <div class="campo">
+                <label for="autor">Autor</label>
+                <input type="text" id="autor" name="autor">
+            </div>
+            <div class="campo">
+                <label for="pontodefornecimento">Ponto de Fornecimento</label>
+                <input type="text" id="pontodefornecimento" name="pontodefornecimento">
+            </div>
+            <div class="campo">
+                <label for="municipio">Município</label>
+                <input type="text" id="municipio" name="municipio">
+            </div>
+            <div class="campo">
+                <label for="tipodedecisao">Tipo de Decisão</label>
+                <select for id="tipodedecisao">
+                  <option value=""></option>
+                  <option value="sentenca">SENTENÇA</option>
+                  <option value="liminar">LIMINAR</option>
+                  <option value="acordo">ACORDO</option>
+                  <option value="acordao">ACORDÃO</option>
+              </select>
+            </div>
+            <div class="campo">
+                <label for="procedimento">Procedimento</label>
+                <select for id="procedimento">
+                  <option value=""></option>
+                  <option value="juizadoespecial">JUIZADO ESPECIAL</option>
+                  <option value="civel">CÍVEL</option>
+              </select>
+            </div>
+            <div class="campo">
+                <label for="diretoriaacao">Diretoria/Ação</label>
+                <select for id="diretoriaacao">
+                  <option value=""></option>
+                  <option value="mercado">MERCADO</option>
+                  <option value="grids">GRIDS</option>
+              </select>
+            </div>
+            <div class="campo">
+                <label for="objetoespecifico">Objeto Específico</label>
+                <input type="text" id="objetoespecifico" name="objetoespecifico">
+            </div>
+            <div class="campo">
+                <label for="qtfdeobf">Qtd de Obf</label>
+                <input type="text" id="qtfdeobf" name="qtfdeobf">
+            </div>
+            <div class="campo">
+                <label for="valormulta">Valor Multa</label>
+                <input type="text" id="valormulta" name="valormulta" placeholder="R$ 0,00"></input>
+            </div>
+            <div class="campo">
+                <label for="valormultalimite">Valor Multa Limite</label>
+                <input type="text" id="valormultalimite" name="valormultalimite" placeholder="R$ 0,00">
+            </div>
+            <div class="campo">
+                <label for="determinacaoJud">Determinação Judicial</label>
+                <input type="text" id="determinacaoJud" name="determinacaoJud">
+            </div>
+            <div class="campo">
+                <label for="prazoFatal">Data Prazo Fatal</label>
+                <input type="datetime-local" id="prazoFatal" name="prazoFatal">
+            </div>
+            <div class="campo">
+                <label for="farol">Farol</label>
+                <input type="text" id="farol" name="farol">
+            </div>
+            <div class="campo">
+                <label for="statusdocumprimento">Status do Cumprimento</label>
+                <select for id="statusdocumprimento">
+                  <option value=""></option>
+                  <option value="feito">FEITO</option>
+                  <option value="pendente">PENDENTE</option>
+              </select>
+            </div>
+            <div class="campo">
+                <label for="responsavel">Responsável</label>
+                <input type="text" id="responsavel" name="responsavel">
+            </div>
+          </form>
+
+          <div class="campo">
+              <label for="descricaodaobrigacao">Descrição da Obrigação</label>
+              <textarea name="" id="descObrigacao" cols="110" rows="10"></textarea>
+          </div>
+
+          <div class="buttons">
+            <button id="salvar" type="submit" onclick="salvarCumprimento()">SALVAR</button>
+            <button id="importar" type="submit">IMPORTAR</button>
+            <button id="exportar" type="submit">EXPORTAR</button>
+            <!-- <button type="button" id="exportar">EXPORTAR</button> -->
+        </div>
+    
+        </form>
+    </div>
+    
+    <div id="f-container2">
+        <form action="" class="formProcesso">
+                <p>Consultar Processo:</p>
+                <input type="text" placeholder="Digite o processo..." id="consultaProcesso">
+    
+                <button id="buttonConsultar" onclick="">PESQUISAR PROCESSO</button>
+                <button id="buttonEditar" onclick="">EDITAR</button>
+            </form>
+        </div>
+
+    <script src="cumprimento.js"></script>
+</body>
+
+</html>

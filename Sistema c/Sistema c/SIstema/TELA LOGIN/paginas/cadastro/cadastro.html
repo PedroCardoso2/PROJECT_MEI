@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="shortcut icon" href="imagem/imgicon.png" type="image/x-icon" class="icon">
+    <title>CADASTRO</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+    
+    <div class="menu">
+
+        <img class="logo" src="../../__imagens/logo-adv.png (1).png" alt="" srcset="">
+        <img id="homeImg" src="../../__imagens/home.png" width="25" height="25" alt="" srcset="">
+        <a class="home" href="../home/home.html">Home</a>
+        <div id="text-date">
+            <h2 class="data-form"></h2>
+            <h2 class="hours"></h2>
+        </div>
+        <img class="logoutImg" src="../../__imagens/logout2.png" width="25" height="25" alt="" srcset="">
+        <a class="logout" href="../../index.html">Logout</a>
+
+    </div>
+    
+    <button id="botaonovocadastro" type="submit">NOVO CADASTRO</button>
+    <button id="buttonConsultar" onclick="">PESQUISAR PROCESSO</button>
+
+    <div class="f-conteiner" id="f-conteiner">
+        <form class="grid-form" id="grid-form">
+
+            <div class="campo">
+                <label for="ndoprocesso">Nº do Processo</label>
+                <input type="text" id="ndoprocesso">
+            </div>
+            <div class="campo">
+                <label for="cpf">CPF/CNPJ</label>
+                <input type="text" id="cpf" name="cpf">
+            </div>
+            <div class="campo">
+                <label for="uc">UC</label>
+                <input type="text" id="uc" name="uc">
+            </div>
+            <div class="campo">
+                <label for="municipio">Município</label>
+                <input type="text" id="municipio" name="municipio">
+            </div>
+            <div class="campo">
+                <label for="tipovara">Tipo Vara</label>
+                <input type="text" id="tipovara" name="tipovara">
+            </div>
+            <div class="campo">
+                <label for="datachegada">Data Chegada</label>
+                <input type="datetime-local" id="datachegada" name="datachegada">
+            </div>
+            <div class="campo">
+                <label for="datatratadotriagem">Data Tratado Triagem</label>
+                <input type="datetime-local" id="datatratadotriagem" name="datatratadotriagem">
+            </div>
+            <div class="campo">
+                <label for="">Tipo De Justiça</label>
+                <select id="tipoJus">
+                    <option value=""></option>
+                    <option value="jec">Jec</option>
+                    <option value="civelComum">Civel Comum</option>
+                    <option value="trabalhista">Trabalhista</option>
+                    <option value="federal">Federal</option>
+                    <option value="criminal">Criminal</option>
+                    <option value="execucaoFiscal">Execução Fiscal</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="autor">Autor</label>
+                <input type="text" id="autor" name="autor">
+            </div>
+            <div class="campo">
+                <label for="objetoespecifico">Objeto Específico</label>
+                <input type="text" id="objetoespecifico" name="objetoespecifico">
+            </div>
+            <div class="campo">
+                <label for="detalhe">Detalhe</label>
+                <input type="text" id="detalhe" name="detalhe">
+            </div>
+            <div class="campo">
+                <label for="serie">Série</label>
+                <input type="text" id="serie" name="serie">
+            </div>
+            <div class="campo">
+                <label for="hashtag">Hashtag</label>
+                <input type="text" id="hashtag" name="hashtag">
+            </div>
+            <div class="campo">
+                <label for="agregado">Agregado</label>
+                <input type="text" id="agregado" name="agregado">
+            </div>
+            <div class="campo">
+                <label for="datafato">Data Fato</label>
+                <input type="datetime-local" id="datafato" name="datafato">
+            </div>
+            <div class="campo">
+                <label for="situacaoliminar">Situação Liminar</label>
+                <input type="text" id="situacaoliminar" name="situacaoliminar">
+            </div>
+            <div class="campo">
+                <label for="situacaoprocessual">Situação Processual</label>
+                <input type="text" id="situacaoprocessual" name="situacaoprocessual">
+            </div>
+            <div class="campo">
+                <label for="obrigacaodefazer">Obrigação de Fazer</label>
+                <input type="text" id="obrigacaodefazer" name="obrigacaodefazer">
+            </div>
+            <div class="campo">
+                <label for="valormulta">Valor Multa</label>
+                <input type="text" id="valormulta" name="valormulta" placeholder="R$ 0,00"></input>
+            </div>
+            <div class="campo">
+                <label for="valormultalimite">Valor Multa Limite</label>
+                <input type="text" id="valormultalimite" name="valormultalimite" placeholder="R$ 0,00">
+            </div>
+            <div class="campo">
+                <label for="tipodemulta">Tipo de Multa</label>
+                <select for id="tipodemulta">
+                  <option value=""></option>
+                  <option value="diaria">DIÁRIA</option>
+                  <option value="unica">ÚNICA</option>
+                  <option value="horas">HORAS</option>
+              </select>
+            </div>
+            <div class="campo">
+                <label for="determinacaoJud">Determinação Judicial</label>
+                <input type="text" id="determinacaoJud" name="determinacaoJud">
+            </div>
+            <div class="campo">
+                <label for="prazoFatal">Data Prazo Fatal</label>
+                <input type="datetime-local" id="prazoFatal" name="prazoFatal">
+            </div>
+            <div class="campo">
+                <label for="responsavel">Responsável</label>
+                <input type="text" id="responsavel" name="responsavel">
+            </div>
+
+            
+            <div class="buttons">
+                <button id="salvar" type="submit" onclick="salvarCadastro()">SALVAR</button>
+                <button type="button" id="editar" style="display: none;">EDITAR</button>
+                <button id="importar" type="submit">IMPORTAR</button>
+                <button id="exportar" type="submit">EXPORTAR</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="cadastro.js"></script>
+</body>
+
+</html>

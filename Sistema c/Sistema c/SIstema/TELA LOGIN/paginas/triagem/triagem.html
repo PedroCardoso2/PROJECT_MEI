@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="triagem.css">
+    <link rel="shortcut icon" href="imagem/imgicon.png" type="image/x-icon" class="icon">
+    <title>TRIAGEM</title>
+</head>
+
+<body>
+    <div class="menu">
+
+        <img class="logo" src="../../__imagens/logo-adv.png (1).png" alt="" srcset="">
+        <img id="homeImg" src="../../__imagens/home.png" width="25" height="25" alt="" srcset="">
+        <a class="home" href="../home/home.html">Home</a>
+
+        <div id="text-date">
+            <h2 class="data-form"></h2>
+            <h2 class="hours"></h2>
+        </div>
+
+        <img class="logoutImg" src="../../__imagens/logout2.png" width="25" height="25" alt="" srcset="">
+        <a class="logout" href="../../index.html">Logout</a>
+
+    </div>
+
+
+    <button id="botaonovatriagem" type="submit">NOVA TRIAGEM</button>
+    <button id="pesquisarProcesso" type="submit">PESQUISAR PROCESSO</button>
+
+
+<div id="f-container">
+    <form class="grid-form" id="grid-form">
+        <div class="campo">
+            <label for="ndoprocesso" >Nº Do Processo</label>
+            <input type="text" id="ndoprocesso" name="ndoprocesso">
+        </div>
+        <div class="campo">
+            <label for="datadapublicacao">Data Chegada</label>
+            <input type="datetime-local" id="datadapublicacao" name="datadapublicacao">
+        </div>
+        <div class="campo">
+            <label for="">Recebida Por</label>
+                <select id="recebidoPor">
+                    <option value=""></option>
+                    <option value="E-mail">E-MAIl</option>
+                    <option value="E-saj">E-SAJ</option>
+                    <option value="pje">PJe</option>
+                </select>
+        </div>
+        <div class="campo">
+            <label for="">Tipo De Justiça</label>
+            <select id="tipoJus">
+                <option value=""></option>
+                <option value="jec">Jec</option>
+                <option value="civelComum">Civel Comum</option>
+                <option value="trabalhista">Trabalhista</option>
+                <option value="federal">Federal</option>
+                <option value="criminal">Criminal</option>
+                <option value="execucaoFiscal">Execução Fiscal</option>
+            </select>
+        </div>
+        <div class="campo">
+            <label for="">Autor</label>
+            <input type="name:" id="autor">
+        </div>
+        <div class="campo">
+            <label for="">Situação Liminar</label>
+                <select id="situacaoliminar" >
+                    <option value=""></option>
+                    <option value="def">Deferida</option>
+                    <option value="indef">Indeferida</option>
+                    <option value="naoAprec">Não apreciada</option>
+                    <option value="naoLiminar">Não há liminar</option>
+                    <option value="cumpriSentec">Cumprimento de sentença</option>
+                </select>
+        </div>
+
+        <div class="campo">
+            <label for="valormulta">Valor Multa</label>
+            <input type="text" id="valormulta" name="valormulta"></input>
+        </div>
+        <div class="campo">
+            <label for="valormultalimite">Valor Limite</label>
+            <input type="text" id="valormultalimite" name="valormultalimite">
+        </div>
+        <div class="campo">
+            <label for="">Tipo De Multa</label>
+                <select id="caixa-multa" >
+                    <option value=""></option>
+                    <option value="Diaria">Diaria</option>
+                    <option value="Unica">Única</option>
+                    <option value="Horas">Horas</option>
+                    <option value="Atos">Por Atos</option>
+                </select>
+        </div>
+        <div class="campo">
+            <label for="">Determinação Judicial</label>
+                <input id="determinacaoJud" type="text">
+        </div>
+        <div class="campo">
+            <label for="">Prazo Fatal</label>
+            <input id="prazoFatal" type="datetime-local">
+        </div>
+        
+        
+    </form>
+    <div class="campo">
+        <label for="descricaodaobrigacao">Descrição Da Origação</label>
+        <textarea name="" id="descObrigacao" cols="110" rows="10"></textarea>
+    </div>
+
+
+    <div class="buttons">
+        <button id="salvarDados" type="submit" onclick="salvarTriagem()">SALVAR</button>
+        <button id="importar" type="submit">IMPORTAR</button>
+        <button id="exportar" type="submit">EXPORTAR</button>
+    </div>
+
+    </form>
+</div>
+
+<div id="f-container2">
+    <form action="" class="formProcesso">
+            <p>Consultar Processo:</p>
+            <input type="text" placeholder="Digite o processo..." id="consultaProcesso">
+
+            <button id="buttonConsultar" onclick="">PESQUISAR PROCESSO</button>
+            <button id="buttonEditar" onclick="">EDITAR</button>
+        </form>
+    </div>
+
+    <script src="triagem.js"></script>
+</body>
+
+</html>
+
